@@ -1,4 +1,3 @@
-C:\Users\Kuri\source\repos\Investment\Investment\obj\Debug\Investment.csprojAssemblyReference.cache
 C:\Users\Kuri\source\repos\Investment\Investment\obj\Debug\Investment.Form1.resources
 C:\Users\Kuri\source\repos\Investment\Investment\obj\Debug\Investment.Properties.Resources.resources
 C:\Users\Kuri\source\repos\Investment\Investment\obj\Debug\Investment.csproj.GenerateResource.cache
@@ -8,3 +7,4 @@ C:\Users\Kuri\source\repos\Investment\Investment\bin\Debug\Investment.exe
 C:\Users\Kuri\source\repos\Investment\Investment\bin\Debug\Investment.pdb
 C:\Users\Kuri\source\repos\Investment\Investment\obj\Debug\Investment.exe
 C:\Users\Kuri\source\repos\Investment\Investment\obj\Debug\Investment.pdb
+C:\Users\Kuri\source\repos\Investment\Investment\obj\Debug\Investment.csprojAssemblyReference.cache
