@@ -1,0 +1,9 @@
+C:\Users\Kuri\source\repos\Investment\Investment\bin\Release\Investment.exe.config
+C:\Users\Kuri\source\repos\Investment\Investment\bin\Release\Investment.exe
+C:\Users\Kuri\source\repos\Investment\Investment\bin\Release\Investment.pdb
+C:\Users\Kuri\source\repos\Investment\Investment\obj\Release\Investment.Form1.resources
+C:\Users\Kuri\source\repos\Investment\Investment\obj\Release\Investment.Properties.Resources.resources
+C:\Users\Kuri\source\repos\Investment\Investment\obj\Release\Investment.csproj.GenerateResource.cache
+C:\Users\Kuri\source\repos\Investment\Investment\obj\Release\Investment.csproj.CoreCompileInputs.cache
+C:\Users\Kuri\source\repos\Investment\Investment\obj\Release\Investment.exe
+C:\Users\Kuri\source\repos\Investment\Investment\obj\Release\Investment.pdb
