@@ -41,7 +41,6 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.profitBox = new System.Windows.Forms.TextBox();
-            this.tabPage3 = new System.Windows.Forms.TabPage();
             this.tabPage2 = new System.Windows.Forms.TabPage();
             this.comboBox2 = new System.Windows.Forms.ComboBox();
             this.button2 = new System.Windows.Forms.Button();
@@ -53,14 +52,15 @@
             this.label7 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.pEntryBox = new System.Windows.Forms.TextBox();
+            this.tabPage3 = new System.Windows.Forms.TabPage();
+            this.label11 = new System.Windows.Forms.Label();
+            this.bBreakoutMarginBox = new System.Windows.Forms.TextBox();
+            this.bBreakoutValBox = new System.Windows.Forms.TextBox();
+            this.label10 = new System.Windows.Forms.Label();
             this.comboBox3 = new System.Windows.Forms.ComboBox();
             this.button3 = new System.Windows.Forms.Button();
             this.label9 = new System.Windows.Forms.Label();
             this.bLineBox = new System.Windows.Forms.TextBox();
-            this.bBreakoutValBox = new System.Windows.Forms.TextBox();
-            this.label10 = new System.Windows.Forms.Label();
-            this.label11 = new System.Windows.Forms.Label();
-            this.bBreakoutMarginBox = new System.Windows.Forms.TextBox();
             this.tabPage4 = new System.Windows.Forms.TabPage();
             this.label12 = new System.Windows.Forms.Label();
             this.lLeverageBox = new System.Windows.Forms.TextBox();
@@ -72,8 +72,8 @@
             this.lEntryBox = new System.Windows.Forms.TextBox();
             this.tabControl.SuspendLayout();
             this.tabPage1.SuspendLayout();
-            this.tabPage3.SuspendLayout();
             this.tabPage2.SuspendLayout();
+            this.tabPage3.SuspendLayout();
             this.tabPage4.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -191,23 +191,6 @@
             this.profitBox.Size = new System.Drawing.Size(76, 20);
             this.profitBox.TabIndex = 10;
             // 
-            // tabPage3
-            // 
-            this.tabPage3.BackColor = System.Drawing.Color.GhostWhite;
-            this.tabPage3.Controls.Add(this.label11);
-            this.tabPage3.Controls.Add(this.bBreakoutMarginBox);
-            this.tabPage3.Controls.Add(this.bBreakoutValBox);
-            this.tabPage3.Controls.Add(this.label10);
-            this.tabPage3.Controls.Add(this.comboBox3);
-            this.tabPage3.Controls.Add(this.button3);
-            this.tabPage3.Controls.Add(this.label9);
-            this.tabPage3.Controls.Add(this.bLineBox);
-            this.tabPage3.Location = new System.Drawing.Point(4, 22);
-            this.tabPage3.Name = "tabPage3";
-            this.tabPage3.Size = new System.Drawing.Size(334, 169);
-            this.tabPage3.TabIndex = 2;
-            this.tabPage3.Text = "Breakout ";
-            // 
             // tabPage2
             // 
             this.tabPage2.BackColor = System.Drawing.Color.GhostWhite;
@@ -310,6 +293,54 @@
             this.pEntryBox.Size = new System.Drawing.Size(76, 20);
             this.pEntryBox.TabIndex = 10;
             // 
+            // tabPage3
+            // 
+            this.tabPage3.BackColor = System.Drawing.Color.GhostWhite;
+            this.tabPage3.Controls.Add(this.label11);
+            this.tabPage3.Controls.Add(this.bBreakoutMarginBox);
+            this.tabPage3.Controls.Add(this.bBreakoutValBox);
+            this.tabPage3.Controls.Add(this.label10);
+            this.tabPage3.Controls.Add(this.comboBox3);
+            this.tabPage3.Controls.Add(this.button3);
+            this.tabPage3.Controls.Add(this.label9);
+            this.tabPage3.Controls.Add(this.bLineBox);
+            this.tabPage3.Location = new System.Drawing.Point(4, 22);
+            this.tabPage3.Name = "tabPage3";
+            this.tabPage3.Size = new System.Drawing.Size(334, 169);
+            this.tabPage3.TabIndex = 2;
+            this.tabPage3.Text = "Breakout ";
+            // 
+            // label11
+            // 
+            this.label11.Location = new System.Drawing.Point(14, 57);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(65, 47);
+            this.label11.TabIndex = 27;
+            this.label11.Text = "breakout confirmation margin %";
+            // 
+            // bBreakoutMarginBox
+            // 
+            this.bBreakoutMarginBox.Location = new System.Drawing.Point(85, 69);
+            this.bBreakoutMarginBox.Name = "bBreakoutMarginBox";
+            this.bBreakoutMarginBox.Size = new System.Drawing.Size(76, 20);
+            this.bBreakoutMarginBox.TabIndex = 26;
+            this.bBreakoutMarginBox.Text = "1.5";
+            // 
+            // bBreakoutValBox
+            // 
+            this.bBreakoutValBox.Location = new System.Drawing.Point(85, 125);
+            this.bBreakoutValBox.Name = "bBreakoutValBox";
+            this.bBreakoutValBox.Size = new System.Drawing.Size(76, 20);
+            this.bBreakoutValBox.TabIndex = 25;
+            // 
+            // label10
+            // 
+            this.label10.Location = new System.Drawing.Point(14, 122);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(56, 44);
+            this.label10.TabIndex = 24;
+            this.label10.Text = "breakout confirmed";
+            // 
             // comboBox3
             // 
             this.comboBox3.FormattingEnabled = true;
@@ -344,37 +375,6 @@
             this.bLineBox.Size = new System.Drawing.Size(76, 20);
             this.bLineBox.TabIndex = 20;
             // 
-            // bBreakoutValBox
-            // 
-            this.bBreakoutValBox.Location = new System.Drawing.Point(85, 125);
-            this.bBreakoutValBox.Name = "bBreakoutValBox";
-            this.bBreakoutValBox.Size = new System.Drawing.Size(76, 20);
-            this.bBreakoutValBox.TabIndex = 25;
-            // 
-            // label10
-            // 
-            this.label10.Location = new System.Drawing.Point(14, 122);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(56, 44);
-            this.label10.TabIndex = 24;
-            this.label10.Text = "breakout confirmed";
-            // 
-            // label11
-            // 
-            this.label11.Location = new System.Drawing.Point(14, 57);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(65, 47);
-            this.label11.TabIndex = 27;
-            this.label11.Text = "breakout confirmation margin %";
-            // 
-            // bBreakoutMarginBox
-            // 
-            this.bBreakoutMarginBox.Location = new System.Drawing.Point(85, 69);
-            this.bBreakoutMarginBox.Name = "bBreakoutMarginBox";
-            this.bBreakoutMarginBox.Size = new System.Drawing.Size(76, 20);
-            this.bBreakoutMarginBox.TabIndex = 26;
-            this.bBreakoutMarginBox.Text = "1.5";
-            // 
             // tabPage4
             // 
             this.tabPage4.Controls.Add(this.label12);
@@ -406,7 +406,6 @@
             this.lLeverageBox.Name = "lLeverageBox";
             this.lLeverageBox.Size = new System.Drawing.Size(76, 20);
             this.lLeverageBox.TabIndex = 34;
-            this.lLeverageBox.Text = "1.5";
             // 
             // lLiqBox
             // 
@@ -471,10 +470,10 @@
             this.tabControl.ResumeLayout(false);
             this.tabPage1.ResumeLayout(false);
             this.tabPage1.PerformLayout();
-            this.tabPage3.ResumeLayout(false);
-            this.tabPage3.PerformLayout();
             this.tabPage2.ResumeLayout(false);
             this.tabPage2.PerformLayout();
+            this.tabPage3.ResumeLayout(false);
+            this.tabPage3.PerformLayout();
             this.tabPage4.ResumeLayout(false);
             this.tabPage4.PerformLayout();
             this.ResumeLayout(false);
