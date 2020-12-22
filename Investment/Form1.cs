@@ -15,14 +15,20 @@ namespace Investment
         public Form1()
         {
             InitializeComponent();
-            comboBox1.Items.Add("Short");
             comboBox1.Items.Add("Long");
-            comboBox2.Items.Add("Short");
+            comboBox1.Items.Add("Short");
+            
+
             comboBox2.Items.Add("Long");
-            comboBox3.Items.Add("Short");
+            comboBox2.Items.Add("Short");
+            
+
             comboBox3.Items.Add("Long");
-            comboBox4.Items.Add("Short");
+            comboBox3.Items.Add("Short");
+            
             comboBox4.Items.Add("Long");
+            comboBox4.Items.Add("Short");
+            
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -129,19 +135,24 @@ namespace Investment
 
 
 
-                if (comboBox3.Text == "Long")
+                if (comboBox4.Text == "Long")
                 {
-                    lLiqBox.Text = ((100 / lev) * entry).ToString();
+                    lLiqBox.Text = ((1-((100/lev)/100)) * entry).ToString();
                 }
-                else if (comboBox3.Text == "Short")
+                else if (comboBox4.Text == "Short")
                 {
-                    lLiqBox.Text = ((1 + (100 / lev)) * entry).ToString();
+                    lLiqBox.Text = ((1 + ((100 / lev) / 100)) * entry).ToString();
                 }
             }
             catch
             {
                 MessageBox.Show("error");
             }
+        }
+
+        private void tabPage4_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

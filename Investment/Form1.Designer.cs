@@ -377,6 +377,7 @@
             // 
             // tabPage4
             // 
+            this.tabPage4.BackColor = System.Drawing.Color.GhostWhite;
             this.tabPage4.Controls.Add(this.label12);
             this.tabPage4.Controls.Add(this.lLeverageBox);
             this.tabPage4.Controls.Add(this.lLiqBox);
@@ -390,7 +391,7 @@
             this.tabPage4.Size = new System.Drawing.Size(334, 169);
             this.tabPage4.TabIndex = 4;
             this.tabPage4.Text = "Liquidation";
-            this.tabPage4.UseVisualStyleBackColor = true;
+            this.tabPage4.Click += new System.EventHandler(this.tabPage4_Click);
             // 
             // label12
             // 
