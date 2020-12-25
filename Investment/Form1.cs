@@ -31,39 +31,7 @@ namespace Investment
             
         }
 
-        private void button1_Click(object sender, EventArgs e)
-        {
-            try
-            {
-                float profitMul = float.Parse(profitBox.Text);
-                float leverageMul = float.Parse(leverageBox.Text);
-                float entryPrice = float.Parse(entryBox.Text);
-
-                if (comboBox1.Text == "Long")
-                {
-                    exitBox.Text = ((entryPrice * (profitMul / leverageMul)) / 100 + entryPrice).ToString();
-                }
-                else if (comboBox1.Text == "Short")
-                {
-                    exitBox.Text = (entryPrice - (entryPrice * (profitMul / leverageMul)) / 100).ToString();
-                }
-                else
-                {
-                }
-
-            }
-            catch
-            {
-                MessageBox.Show("error");
-            }
-        }
-
         private void tabPage1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label6_Click(object sender, EventArgs e)
         {
 
         }
@@ -153,6 +121,33 @@ namespace Investment
         private void tabPage4_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void button1_Click_1(object sender, EventArgs e)
+        {
+            try
+            {
+                float profitMul = float.Parse(profitBox.Text);
+                float leverageMul = float.Parse(leverageBox.Text);
+                float entryPrice = float.Parse(entryBox.Text);
+
+                if (comboBox1.Text == "Long")
+                {
+                    exitBox.Text = ((entryPrice * (profitMul / leverageMul)) / 100 + entryPrice).ToString();
+                }
+                else if (comboBox1.Text == "Short")
+                {
+                    exitBox.Text = (entryPrice - (entryPrice * (profitMul / leverageMul)) / 100).ToString();
+                }
+                else
+                {
+                }
+
+            }
+            catch
+            {
+                MessageBox.Show("error");
+            }
         }
     }
 }
