@@ -7,4 +7,3 @@ C:\Users\Kuri\source\repos\Investment\Investment\obj\Release\Investment.csproj.G
 C:\Users\Kuri\source\repos\Investment\Investment\obj\Release\Investment.csproj.CoreCompileInputs.cache
 C:\Users\Kuri\source\repos\Investment\Investment\obj\Release\Investment.exe
 C:\Users\Kuri\source\repos\Investment\Investment\obj\Release\Investment.pdb
-C:\Users\Kuri\source\repos\Investment\Investment\obj\Release\Investment.csprojAssemblyReference.cache

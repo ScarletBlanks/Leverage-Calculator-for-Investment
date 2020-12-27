@@ -70,11 +70,23 @@
             this.button4 = new System.Windows.Forms.Button();
             this.label14 = new System.Windows.Forms.Label();
             this.lEntryBox = new System.Windows.Forms.TextBox();
+            this.tabPage5 = new System.Windows.Forms.TabPage();
+            this.comboBox5 = new System.Windows.Forms.ComboBox();
+            this.button5 = new System.Windows.Forms.Button();
+            this.sSLBox = new System.Windows.Forms.TextBox();
+            this.label15 = new System.Windows.Forms.Label();
+            this.label16 = new System.Windows.Forms.Label();
+            this.sLevBox = new System.Windows.Forms.TextBox();
+            this.sAcceptLossBox = new System.Windows.Forms.TextBox();
+            this.label18 = new System.Windows.Forms.Label();
+            this.sEntryBox = new System.Windows.Forms.TextBox();
+            this.label17 = new System.Windows.Forms.Label();
             this.tabControl.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.tabPage2.SuspendLayout();
             this.tabPage3.SuspendLayout();
             this.tabPage4.SuspendLayout();
+            this.tabPage5.SuspendLayout();
             this.SuspendLayout();
             // 
             // tabControl
@@ -83,6 +95,7 @@
             this.tabControl.Controls.Add(this.tabPage2);
             this.tabControl.Controls.Add(this.tabPage3);
             this.tabControl.Controls.Add(this.tabPage4);
+            this.tabControl.Controls.Add(this.tabPage5);
             this.tabControl.Location = new System.Drawing.Point(12, 6);
             this.tabControl.Name = "tabControl";
             this.tabControl.SelectedIndex = 0;
@@ -325,7 +338,7 @@
             this.bBreakoutMarginBox.Name = "bBreakoutMarginBox";
             this.bBreakoutMarginBox.Size = new System.Drawing.Size(76, 20);
             this.bBreakoutMarginBox.TabIndex = 26;
-            this.bBreakoutMarginBox.Text = "1.5";
+            this.bBreakoutMarginBox.Text = "0.88";
             // 
             // bBreakoutValBox
             // 
@@ -458,6 +471,108 @@
             this.lEntryBox.Size = new System.Drawing.Size(76, 20);
             this.lEntryBox.TabIndex = 28;
             // 
+            // tabPage5
+            // 
+            this.tabPage5.Controls.Add(this.label17);
+            this.tabPage5.Controls.Add(this.comboBox5);
+            this.tabPage5.Controls.Add(this.button5);
+            this.tabPage5.Controls.Add(this.sSLBox);
+            this.tabPage5.Controls.Add(this.label15);
+            this.tabPage5.Controls.Add(this.label16);
+            this.tabPage5.Controls.Add(this.sLevBox);
+            this.tabPage5.Controls.Add(this.sAcceptLossBox);
+            this.tabPage5.Controls.Add(this.label18);
+            this.tabPage5.Controls.Add(this.sEntryBox);
+            this.tabPage5.Location = new System.Drawing.Point(4, 22);
+            this.tabPage5.Name = "tabPage5";
+            this.tabPage5.Size = new System.Drawing.Size(334, 169);
+            this.tabPage5.TabIndex = 5;
+            this.tabPage5.Text = "Stop Loss";
+            this.tabPage5.UseVisualStyleBackColor = true;
+            // 
+            // comboBox5
+            // 
+            this.comboBox5.FormattingEnabled = true;
+            this.comboBox5.Location = new System.Drawing.Point(199, 19);
+            this.comboBox5.Name = "comboBox5";
+            this.comboBox5.Size = new System.Drawing.Size(87, 21);
+            this.comboBox5.TabIndex = 29;
+            // 
+            // button5
+            // 
+            this.button5.Location = new System.Drawing.Point(199, 134);
+            this.button5.Name = "button5";
+            this.button5.Size = new System.Drawing.Size(87, 23);
+            this.button5.TabIndex = 28;
+            this.button5.Text = "calculate";
+            this.button5.UseVisualStyleBackColor = true;
+            this.button5.Click += new System.EventHandler(this.button5_Click);
+            // 
+            // sSLBox
+            // 
+            this.sSLBox.Location = new System.Drawing.Point(91, 137);
+            this.sSLBox.Name = "sSLBox";
+            this.sSLBox.Size = new System.Drawing.Size(76, 20);
+            this.sSLBox.TabIndex = 27;
+            // 
+            // label15
+            // 
+            this.label15.AutoSize = true;
+            this.label15.Location = new System.Drawing.Point(23, 140);
+            this.label15.Name = "label15";
+            this.label15.Size = new System.Drawing.Size(32, 13);
+            this.label15.TabIndex = 26;
+            this.label15.Text = "SL at";
+            // 
+            // label16
+            // 
+            this.label16.AutoSize = true;
+            this.label16.Location = new System.Drawing.Point(23, 105);
+            this.label16.Name = "label16";
+            this.label16.Size = new System.Drawing.Size(56, 13);
+            this.label16.TabIndex = 25;
+            this.label16.Text = "leverage x";
+            this.label16.Click += new System.EventHandler(this.label16_Click);
+            // 
+            // sLevBox
+            // 
+            this.sLevBox.Location = new System.Drawing.Point(91, 102);
+            this.sLevBox.Name = "sLevBox";
+            this.sLevBox.Size = new System.Drawing.Size(76, 20);
+            this.sLevBox.TabIndex = 24;
+            this.sLevBox.Text = "1";
+            // 
+            // sAcceptLossBox
+            // 
+            this.sAcceptLossBox.Location = new System.Drawing.Point(91, 60);
+            this.sAcceptLossBox.Name = "sAcceptLossBox";
+            this.sAcceptLossBox.Size = new System.Drawing.Size(76, 20);
+            this.sAcceptLossBox.TabIndex = 23;
+            // 
+            // label18
+            // 
+            this.label18.AutoSize = true;
+            this.label18.Location = new System.Drawing.Point(23, 22);
+            this.label18.Name = "label18";
+            this.label18.Size = new System.Drawing.Size(30, 13);
+            this.label18.TabIndex = 21;
+            this.label18.Text = "entry";
+            // 
+            // sEntryBox
+            // 
+            this.sEntryBox.Location = new System.Drawing.Point(91, 20);
+            this.sEntryBox.Name = "sEntryBox";
+            this.sEntryBox.Size = new System.Drawing.Size(76, 20);
+            this.sEntryBox.TabIndex = 20;
+            // 
+            // label17
+            // 
+            this.label17.Location = new System.Drawing.Point(23, 51);
+            this.label17.Name = "label17";
+            this.label17.Size = new System.Drawing.Size(65, 47);
+            this.label17.TabIndex = 30;
+            this.label17.Text = "% acceptable loss";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -478,6 +593,8 @@
             this.tabPage3.PerformLayout();
             this.tabPage4.ResumeLayout(false);
             this.tabPage4.PerformLayout();
+            this.tabPage5.ResumeLayout(false);
+            this.tabPage5.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -525,6 +642,17 @@
         private System.Windows.Forms.Button button4;
         private System.Windows.Forms.Label label14;
         private System.Windows.Forms.TextBox lEntryBox;
+        private System.Windows.Forms.TabPage tabPage5;
+        private System.Windows.Forms.Label label17;
+        private System.Windows.Forms.ComboBox comboBox5;
+        private System.Windows.Forms.Button button5;
+        private System.Windows.Forms.TextBox sSLBox;
+        private System.Windows.Forms.Label label15;
+        private System.Windows.Forms.Label label16;
+        private System.Windows.Forms.TextBox sLevBox;
+        private System.Windows.Forms.TextBox sAcceptLossBox;
+        private System.Windows.Forms.Label label18;
+        private System.Windows.Forms.TextBox sEntryBox;
     }
 }
 

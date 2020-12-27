@@ -28,7 +28,10 @@ namespace Investment
             
             comboBox4.Items.Add("Long");
             comboBox4.Items.Add("Short");
-            
+
+            comboBox5.Items.Add("Long");
+            comboBox5.Items.Add("Short");
+
         }
 
         private void tabPage1_Click(object sender, EventArgs e)
@@ -138,6 +141,39 @@ namespace Investment
                 else if (comboBox1.Text == "Short")
                 {
                     exitBox.Text = (entryPrice - (entryPrice * (profitMul / leverageMul)) / 100).ToString();
+                }
+                else
+                {
+                }
+
+            }
+            catch
+            {
+                MessageBox.Show("error");
+            }
+        }
+
+        private void label16_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                float acceptableLoss = float.Parse(sAcceptLossBox.Text);
+                float leverage = float.Parse(sLevBox.Text);
+                float entry = float.Parse(sEntryBox.Text);
+
+
+                if (comboBox5.Text == "Long")
+                {
+                    sSLBox.Text = ((1-((acceptableLoss / leverage)/100))*entry).ToString();
+                }
+                else if (comboBox5.Text == "Short")
+                {
+                    sSLBox.Text = ((1 + ((acceptableLoss / leverage)/100)) * entry).ToString();
                 }
                 else
                 {
