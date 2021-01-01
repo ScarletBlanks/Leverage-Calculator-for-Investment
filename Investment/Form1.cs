@@ -199,28 +199,35 @@ namespace Investment
 
         private void button6_Click(object sender, EventArgs e)
         {
+
+           
+
             try
             {
+                float leverage = float.Parse(stratLevBox.Text);
+                float entry = float.Parse(stratEntryBox.Text);
+
+
                 float SLperc;
                 float TP1perc;
                 float TP2perc;
                 if (stratRiskComboBox.Text == "Low")
                 {
-                     SLperc = 6;
-                     TP1perc = 8;
-                     TP2perc = 12;
+                     SLperc = (leverage/20)* 6;
+                     TP1perc = (leverage / 20) * 8;
+                     TP2perc = (leverage / 20) * 12;
                 }
                 else if (stratRiskComboBox.Text == "Medium")
                 {
-                     SLperc = 10;
-                     TP1perc = 12;
-                     TP2perc = 20;
+                     SLperc = (leverage / 20) * 10;
+                     TP1perc = (leverage / 20) * 12;
+                     TP2perc = (leverage / 20) * 20;
                 }
                 else if (stratRiskComboBox.Text == "High")
                 {
-                     SLperc = 15;
-                     TP1perc = 20;
-                     TP2perc = 30;
+                     SLperc = (leverage / 20) * 15;
+                     TP1perc = (leverage / 20) * 20;
+                     TP2perc = (leverage / 20) * 30;
                 }
                 else
                 {
@@ -229,8 +236,7 @@ namespace Investment
                      TP2perc = 0;
                 }
 
-                float leverage = float.Parse(stratLevBox.Text);
-                float entry = float.Parse(stratEntryBox.Text);
+                
 
                 if (comboBox6.Text == "Long")
                 {
