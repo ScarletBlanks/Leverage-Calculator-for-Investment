@@ -71,6 +71,7 @@
             this.label14 = new System.Windows.Forms.Label();
             this.lEntryBox = new System.Windows.Forms.TextBox();
             this.tabPage5 = new System.Windows.Forms.TabPage();
+            this.label17 = new System.Windows.Forms.Label();
             this.comboBox5 = new System.Windows.Forms.ComboBox();
             this.button5 = new System.Windows.Forms.Button();
             this.sSLBox = new System.Windows.Forms.TextBox();
@@ -80,13 +81,30 @@
             this.sAcceptLossBox = new System.Windows.Forms.TextBox();
             this.label18 = new System.Windows.Forms.Label();
             this.sEntryBox = new System.Windows.Forms.TextBox();
-            this.label17 = new System.Windows.Forms.Label();
+            this.tabPage6 = new System.Windows.Forms.TabPage();
+            this.label19 = new System.Windows.Forms.Label();
+            this.comboBox6 = new System.Windows.Forms.ComboBox();
+            this.button6 = new System.Windows.Forms.Button();
+            this.stratTP1Box = new System.Windows.Forms.TextBox();
+            this.label20 = new System.Windows.Forms.Label();
+            this.label21 = new System.Windows.Forms.Label();
+            this.stratLevBox = new System.Windows.Forms.TextBox();
+            this.label22 = new System.Windows.Forms.Label();
+            this.stratEntryBox = new System.Windows.Forms.TextBox();
+            this.stratRiskComboBox = new System.Windows.Forms.ComboBox();
+            this.label23 = new System.Windows.Forms.Label();
+            this.label24 = new System.Windows.Forms.Label();
+            this.label25 = new System.Windows.Forms.Label();
+            this.stratSLBox = new System.Windows.Forms.TextBox();
+            this.label26 = new System.Windows.Forms.Label();
+            this.stratTP2Box = new System.Windows.Forms.TextBox();
             this.tabControl.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.tabPage2.SuspendLayout();
             this.tabPage3.SuspendLayout();
             this.tabPage4.SuspendLayout();
             this.tabPage5.SuspendLayout();
+            this.tabPage6.SuspendLayout();
             this.SuspendLayout();
             // 
             // tabControl
@@ -96,6 +114,7 @@
             this.tabControl.Controls.Add(this.tabPage3);
             this.tabControl.Controls.Add(this.tabPage4);
             this.tabControl.Controls.Add(this.tabPage5);
+            this.tabControl.Controls.Add(this.tabPage6);
             this.tabControl.Location = new System.Drawing.Point(12, 6);
             this.tabControl.Name = "tabControl";
             this.tabControl.SelectedIndex = 0;
@@ -490,6 +509,14 @@
             this.tabPage5.Text = "Stop Loss";
             this.tabPage5.UseVisualStyleBackColor = true;
             // 
+            // label17
+            // 
+            this.label17.Location = new System.Drawing.Point(23, 51);
+            this.label17.Name = "label17";
+            this.label17.Size = new System.Drawing.Size(65, 47);
+            this.label17.TabIndex = 30;
+            this.label17.Text = "% acceptable loss";
+            // 
             // comboBox5
             // 
             this.comboBox5.FormattingEnabled = true;
@@ -540,7 +567,7 @@
             this.sLevBox.Name = "sLevBox";
             this.sLevBox.Size = new System.Drawing.Size(76, 20);
             this.sLevBox.TabIndex = 24;
-            this.sLevBox.Text = "1";
+            this.sLevBox.Text = "20";
             // 
             // sAcceptLossBox
             // 
@@ -565,20 +592,173 @@
             this.sEntryBox.Size = new System.Drawing.Size(76, 20);
             this.sEntryBox.TabIndex = 20;
             // 
-            // label17
+            // tabPage6
             // 
-            this.label17.Location = new System.Drawing.Point(23, 51);
-            this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(65, 47);
-            this.label17.TabIndex = 30;
-            this.label17.Text = "% acceptable loss";
+            this.tabPage6.Controls.Add(this.stratTP2Box);
+            this.tabPage6.Controls.Add(this.label26);
+            this.tabPage6.Controls.Add(this.stratSLBox);
+            this.tabPage6.Controls.Add(this.label25);
+            this.tabPage6.Controls.Add(this.label24);
+            this.tabPage6.Controls.Add(this.label23);
+            this.tabPage6.Controls.Add(this.stratRiskComboBox);
+            this.tabPage6.Controls.Add(this.label19);
+            this.tabPage6.Controls.Add(this.comboBox6);
+            this.tabPage6.Controls.Add(this.button6);
+            this.tabPage6.Controls.Add(this.stratTP1Box);
+            this.tabPage6.Controls.Add(this.label20);
+            this.tabPage6.Controls.Add(this.label21);
+            this.tabPage6.Controls.Add(this.stratLevBox);
+            this.tabPage6.Controls.Add(this.label22);
+            this.tabPage6.Controls.Add(this.stratEntryBox);
+            this.tabPage6.Location = new System.Drawing.Point(4, 22);
+            this.tabPage6.Name = "tabPage6";
+            this.tabPage6.Size = new System.Drawing.Size(334, 169);
+            this.tabPage6.TabIndex = 6;
+            this.tabPage6.Text = "Strategy";
+            this.tabPage6.UseVisualStyleBackColor = true;
+            this.tabPage6.Click += new System.EventHandler(this.tabPage6_Click);
+            // 
+            // label19
+            // 
+            this.label19.AutoSize = true;
+            this.label19.Location = new System.Drawing.Point(13, 96);
+            this.label19.Name = "label19";
+            this.label19.Size = new System.Drawing.Size(20, 13);
+            this.label19.TabIndex = 40;
+            this.label19.Text = "SL";
+            // 
+            // comboBox6
+            // 
+            this.comboBox6.FormattingEnabled = true;
+            this.comboBox6.Location = new System.Drawing.Point(233, 7);
+            this.comboBox6.Name = "comboBox6";
+            this.comboBox6.Size = new System.Drawing.Size(87, 21);
+            this.comboBox6.TabIndex = 39;
+            // 
+            // button6
+            // 
+            this.button6.Location = new System.Drawing.Point(233, 133);
+            this.button6.Name = "button6";
+            this.button6.Size = new System.Drawing.Size(87, 23);
+            this.button6.TabIndex = 38;
+            this.button6.Text = "calculate";
+            this.button6.UseVisualStyleBackColor = true;
+            this.button6.Click += new System.EventHandler(this.button6_Click);
+            // 
+            // stratTP1Box
+            // 
+            this.stratTP1Box.Location = new System.Drawing.Point(50, 115);
+            this.stratTP1Box.Name = "stratTP1Box";
+            this.stratTP1Box.Size = new System.Drawing.Size(76, 20);
+            this.stratTP1Box.TabIndex = 37;
+            // 
+            // label20
+            // 
+            this.label20.AutoSize = true;
+            this.label20.Location = new System.Drawing.Point(11, 118);
+            this.label20.Name = "label20";
+            this.label20.Size = new System.Drawing.Size(27, 13);
+            this.label20.TabIndex = 36;
+            this.label20.Text = "TP1";
+            // 
+            // label21
+            // 
+            this.label21.AutoSize = true;
+            this.label21.Location = new System.Drawing.Point(13, 37);
+            this.label21.Name = "label21";
+            this.label21.Size = new System.Drawing.Size(25, 13);
+            this.label21.TabIndex = 35;
+            this.label21.Text = "Lev";
+            // 
+            // stratLevBox
+            // 
+            this.stratLevBox.Location = new System.Drawing.Point(50, 36);
+            this.stratLevBox.Name = "stratLevBox";
+            this.stratLevBox.Size = new System.Drawing.Size(76, 20);
+            this.stratLevBox.TabIndex = 33;
+            this.stratLevBox.Text = "20";
+            // 
+            // label22
+            // 
+            this.label22.AutoSize = true;
+            this.label22.Location = new System.Drawing.Point(13, 13);
+            this.label22.Name = "label22";
+            this.label22.Size = new System.Drawing.Size(31, 13);
+            this.label22.TabIndex = 32;
+            this.label22.Text = "Entry";
+            // 
+            // stratEntryBox
+            // 
+            this.stratEntryBox.Location = new System.Drawing.Point(50, 10);
+            this.stratEntryBox.Name = "stratEntryBox";
+            this.stratEntryBox.Size = new System.Drawing.Size(76, 20);
+            this.stratEntryBox.TabIndex = 31;
+            // 
+            // stratRiskComboBox
+            // 
+            this.stratRiskComboBox.FormattingEnabled = true;
+            this.stratRiskComboBox.Location = new System.Drawing.Point(233, 37);
+            this.stratRiskComboBox.Name = "stratRiskComboBox";
+            this.stratRiskComboBox.Size = new System.Drawing.Size(87, 21);
+            this.stratRiskComboBox.TabIndex = 41;
+            // 
+            // label23
+            // 
+            this.label23.AutoSize = true;
+            this.label23.ForeColor = System.Drawing.Color.Gray;
+            this.label23.Location = new System.Drawing.Point(-7, 61);
+            this.label23.Name = "label23";
+            this.label23.Size = new System.Drawing.Size(361, 13);
+            this.label23.TabIndex = 42;
+            this.label23.Text = "___________________________________________________________";
+            // 
+            // label24
+            // 
+            this.label24.AutoSize = true;
+            this.label24.Location = new System.Drawing.Point(157, 40);
+            this.label24.Name = "label24";
+            this.label24.Size = new System.Drawing.Size(70, 13);
+            this.label24.TabIndex = 43;
+            this.label24.Text = "Risk Appetite";
+            // 
+            // label25
+            // 
+            this.label25.AutoSize = true;
+            this.label25.Location = new System.Drawing.Point(157, 10);
+            this.label25.Name = "label25";
+            this.label25.Size = new System.Drawing.Size(71, 13);
+            this.label25.TabIndex = 44;
+            this.label25.Text = "Position Type";
+            // 
+            // stratSLBox
+            // 
+            this.stratSLBox.Location = new System.Drawing.Point(50, 89);
+            this.stratSLBox.Name = "stratSLBox";
+            this.stratSLBox.Size = new System.Drawing.Size(76, 20);
+            this.stratSLBox.TabIndex = 45;
+            // 
+            // label26
+            // 
+            this.label26.AutoSize = true;
+            this.label26.Location = new System.Drawing.Point(11, 143);
+            this.label26.Name = "label26";
+            this.label26.Size = new System.Drawing.Size(27, 13);
+            this.label26.TabIndex = 46;
+            this.label26.Text = "TP2";
+            // 
+            // stratTP2Box
+            // 
+            this.stratTP2Box.Location = new System.Drawing.Point(50, 140);
+            this.stratTP2Box.Name = "stratTP2Box";
+            this.stratTP2Box.Size = new System.Drawing.Size(76, 20);
+            this.stratTP2Box.TabIndex = 47;
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.HotTrack;
-            this.ClientSize = new System.Drawing.Size(366, 207);
+            this.ClientSize = new System.Drawing.Size(368, 213);
             this.Controls.Add(this.tabControl);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Form1";
@@ -595,6 +775,8 @@
             this.tabPage4.PerformLayout();
             this.tabPage5.ResumeLayout(false);
             this.tabPage5.PerformLayout();
+            this.tabPage6.ResumeLayout(false);
+            this.tabPage6.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -653,6 +835,23 @@
         private System.Windows.Forms.TextBox sAcceptLossBox;
         private System.Windows.Forms.Label label18;
         private System.Windows.Forms.TextBox sEntryBox;
+        private System.Windows.Forms.TabPage tabPage6;
+        private System.Windows.Forms.ComboBox stratRiskComboBox;
+        private System.Windows.Forms.Label label19;
+        private System.Windows.Forms.ComboBox comboBox6;
+        private System.Windows.Forms.Button button6;
+        private System.Windows.Forms.TextBox stratTP1Box;
+        private System.Windows.Forms.Label label20;
+        private System.Windows.Forms.Label label21;
+        private System.Windows.Forms.TextBox stratLevBox;
+        private System.Windows.Forms.Label label22;
+        private System.Windows.Forms.TextBox stratEntryBox;
+        private System.Windows.Forms.Label label25;
+        private System.Windows.Forms.Label label24;
+        private System.Windows.Forms.Label label23;
+        private System.Windows.Forms.TextBox stratTP2Box;
+        private System.Windows.Forms.Label label26;
+        private System.Windows.Forms.TextBox stratSLBox;
     }
 }
 
