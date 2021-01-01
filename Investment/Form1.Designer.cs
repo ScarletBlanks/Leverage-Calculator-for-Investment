@@ -82,6 +82,13 @@
             this.label18 = new System.Windows.Forms.Label();
             this.sEntryBox = new System.Windows.Forms.TextBox();
             this.tabPage6 = new System.Windows.Forms.TabPage();
+            this.stratTP2Box = new System.Windows.Forms.TextBox();
+            this.label26 = new System.Windows.Forms.Label();
+            this.stratSLBox = new System.Windows.Forms.TextBox();
+            this.label25 = new System.Windows.Forms.Label();
+            this.label24 = new System.Windows.Forms.Label();
+            this.label23 = new System.Windows.Forms.Label();
+            this.stratRiskComboBox = new System.Windows.Forms.ComboBox();
             this.label19 = new System.Windows.Forms.Label();
             this.comboBox6 = new System.Windows.Forms.ComboBox();
             this.button6 = new System.Windows.Forms.Button();
@@ -91,13 +98,12 @@
             this.stratLevBox = new System.Windows.Forms.TextBox();
             this.label22 = new System.Windows.Forms.Label();
             this.stratEntryBox = new System.Windows.Forms.TextBox();
-            this.stratRiskComboBox = new System.Windows.Forms.ComboBox();
-            this.label23 = new System.Windows.Forms.Label();
-            this.label24 = new System.Windows.Forms.Label();
-            this.label25 = new System.Windows.Forms.Label();
-            this.stratSLBox = new System.Windows.Forms.TextBox();
-            this.label26 = new System.Windows.Forms.Label();
-            this.stratTP2Box = new System.Windows.Forms.TextBox();
+            this.stratTP4Box = new System.Windows.Forms.TextBox();
+            this.label27 = new System.Windows.Forms.Label();
+            this.stratTP3Box = new System.Windows.Forms.TextBox();
+            this.label28 = new System.Windows.Forms.Label();
+            this.stratTP5Box = new System.Windows.Forms.TextBox();
+            this.label29 = new System.Windows.Forms.Label();
             this.tabControl.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.tabPage2.SuspendLayout();
@@ -594,6 +600,12 @@
             // 
             // tabPage6
             // 
+            this.tabPage6.Controls.Add(this.stratTP5Box);
+            this.tabPage6.Controls.Add(this.label29);
+            this.tabPage6.Controls.Add(this.stratTP4Box);
+            this.tabPage6.Controls.Add(this.label27);
+            this.tabPage6.Controls.Add(this.stratTP3Box);
+            this.tabPage6.Controls.Add(this.label28);
             this.tabPage6.Controls.Add(this.stratTP2Box);
             this.tabPage6.Controls.Add(this.label26);
             this.tabPage6.Controls.Add(this.stratSLBox);
@@ -618,6 +630,65 @@
             this.tabPage6.UseVisualStyleBackColor = true;
             this.tabPage6.Click += new System.EventHandler(this.tabPage6_Click);
             // 
+            // stratTP2Box
+            // 
+            this.stratTP2Box.Location = new System.Drawing.Point(50, 140);
+            this.stratTP2Box.Name = "stratTP2Box";
+            this.stratTP2Box.Size = new System.Drawing.Size(76, 20);
+            this.stratTP2Box.TabIndex = 47;
+            // 
+            // label26
+            // 
+            this.label26.AutoSize = true;
+            this.label26.Location = new System.Drawing.Point(11, 143);
+            this.label26.Name = "label26";
+            this.label26.Size = new System.Drawing.Size(27, 13);
+            this.label26.TabIndex = 46;
+            this.label26.Text = "TP2";
+            // 
+            // stratSLBox
+            // 
+            this.stratSLBox.Location = new System.Drawing.Point(50, 89);
+            this.stratSLBox.Name = "stratSLBox";
+            this.stratSLBox.Size = new System.Drawing.Size(76, 20);
+            this.stratSLBox.TabIndex = 45;
+            // 
+            // label25
+            // 
+            this.label25.AutoSize = true;
+            this.label25.Location = new System.Drawing.Point(157, 10);
+            this.label25.Name = "label25";
+            this.label25.Size = new System.Drawing.Size(71, 13);
+            this.label25.TabIndex = 44;
+            this.label25.Text = "Position Type";
+            // 
+            // label24
+            // 
+            this.label24.AutoSize = true;
+            this.label24.Location = new System.Drawing.Point(157, 40);
+            this.label24.Name = "label24";
+            this.label24.Size = new System.Drawing.Size(70, 13);
+            this.label24.TabIndex = 43;
+            this.label24.Text = "Risk Appetite";
+            // 
+            // label23
+            // 
+            this.label23.AutoSize = true;
+            this.label23.ForeColor = System.Drawing.Color.Gray;
+            this.label23.Location = new System.Drawing.Point(-7, 61);
+            this.label23.Name = "label23";
+            this.label23.Size = new System.Drawing.Size(361, 13);
+            this.label23.TabIndex = 42;
+            this.label23.Text = "___________________________________________________________";
+            // 
+            // stratRiskComboBox
+            // 
+            this.stratRiskComboBox.FormattingEnabled = true;
+            this.stratRiskComboBox.Location = new System.Drawing.Point(233, 37);
+            this.stratRiskComboBox.Name = "stratRiskComboBox";
+            this.stratRiskComboBox.Size = new System.Drawing.Size(87, 21);
+            this.stratRiskComboBox.TabIndex = 41;
+            // 
             // label19
             // 
             this.label19.AutoSize = true;
@@ -637,7 +708,7 @@
             // 
             // button6
             // 
-            this.button6.Location = new System.Drawing.Point(233, 133);
+            this.button6.Location = new System.Drawing.Point(244, 141);
             this.button6.Name = "button6";
             this.button6.Size = new System.Drawing.Size(87, 23);
             this.button6.TabIndex = 38;
@@ -694,64 +765,54 @@
             this.stratEntryBox.Size = new System.Drawing.Size(76, 20);
             this.stratEntryBox.TabIndex = 31;
             // 
-            // stratRiskComboBox
+            // stratTP4Box
             // 
-            this.stratRiskComboBox.FormattingEnabled = true;
-            this.stratRiskComboBox.Location = new System.Drawing.Point(233, 37);
-            this.stratRiskComboBox.Name = "stratRiskComboBox";
-            this.stratRiskComboBox.Size = new System.Drawing.Size(87, 21);
-            this.stratRiskComboBox.TabIndex = 41;
+            this.stratTP4Box.Location = new System.Drawing.Point(165, 118);
+            this.stratTP4Box.Name = "stratTP4Box";
+            this.stratTP4Box.Size = new System.Drawing.Size(76, 20);
+            this.stratTP4Box.TabIndex = 51;
             // 
-            // label23
+            // label27
             // 
-            this.label23.AutoSize = true;
-            this.label23.ForeColor = System.Drawing.Color.Gray;
-            this.label23.Location = new System.Drawing.Point(-7, 61);
-            this.label23.Name = "label23";
-            this.label23.Size = new System.Drawing.Size(361, 13);
-            this.label23.TabIndex = 42;
-            this.label23.Text = "___________________________________________________________";
+            this.label27.AutoSize = true;
+            this.label27.Location = new System.Drawing.Point(132, 121);
+            this.label27.Name = "label27";
+            this.label27.Size = new System.Drawing.Size(27, 13);
+            this.label27.TabIndex = 50;
+            this.label27.Text = "TP4";
             // 
-            // label24
+            // stratTP3Box
             // 
-            this.label24.AutoSize = true;
-            this.label24.Location = new System.Drawing.Point(157, 40);
-            this.label24.Name = "label24";
-            this.label24.Size = new System.Drawing.Size(70, 13);
-            this.label24.TabIndex = 43;
-            this.label24.Text = "Risk Appetite";
+            this.stratTP3Box.Location = new System.Drawing.Point(165, 89);
+            this.stratTP3Box.Name = "stratTP3Box";
+            this.stratTP3Box.Size = new System.Drawing.Size(76, 20);
+            this.stratTP3Box.TabIndex = 49;
+            this.stratTP3Box.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
             // 
-            // label25
+            // label28
             // 
-            this.label25.AutoSize = true;
-            this.label25.Location = new System.Drawing.Point(157, 10);
-            this.label25.Name = "label25";
-            this.label25.Size = new System.Drawing.Size(71, 13);
-            this.label25.TabIndex = 44;
-            this.label25.Text = "Position Type";
+            this.label28.AutoSize = true;
+            this.label28.Location = new System.Drawing.Point(132, 92);
+            this.label28.Name = "label28";
+            this.label28.Size = new System.Drawing.Size(27, 13);
+            this.label28.TabIndex = 48;
+            this.label28.Text = "TP3";
             // 
-            // stratSLBox
+            // stratTP5Box
             // 
-            this.stratSLBox.Location = new System.Drawing.Point(50, 89);
-            this.stratSLBox.Name = "stratSLBox";
-            this.stratSLBox.Size = new System.Drawing.Size(76, 20);
-            this.stratSLBox.TabIndex = 45;
+            this.stratTP5Box.Location = new System.Drawing.Point(165, 143);
+            this.stratTP5Box.Name = "stratTP5Box";
+            this.stratTP5Box.Size = new System.Drawing.Size(76, 20);
+            this.stratTP5Box.TabIndex = 53;
             // 
-            // label26
+            // label29
             // 
-            this.label26.AutoSize = true;
-            this.label26.Location = new System.Drawing.Point(11, 143);
-            this.label26.Name = "label26";
-            this.label26.Size = new System.Drawing.Size(27, 13);
-            this.label26.TabIndex = 46;
-            this.label26.Text = "TP2";
-            // 
-            // stratTP2Box
-            // 
-            this.stratTP2Box.Location = new System.Drawing.Point(50, 140);
-            this.stratTP2Box.Name = "stratTP2Box";
-            this.stratTP2Box.Size = new System.Drawing.Size(76, 20);
-            this.stratTP2Box.TabIndex = 47;
+            this.label29.AutoSize = true;
+            this.label29.Location = new System.Drawing.Point(132, 146);
+            this.label29.Name = "label29";
+            this.label29.Size = new System.Drawing.Size(27, 13);
+            this.label29.TabIndex = 52;
+            this.label29.Text = "TP5";
             // 
             // Form1
             // 
@@ -852,6 +913,12 @@
         private System.Windows.Forms.TextBox stratTP2Box;
         private System.Windows.Forms.Label label26;
         private System.Windows.Forms.TextBox stratSLBox;
+        private System.Windows.Forms.TextBox stratTP4Box;
+        private System.Windows.Forms.Label label27;
+        private System.Windows.Forms.TextBox stratTP3Box;
+        private System.Windows.Forms.Label label28;
+        private System.Windows.Forms.TextBox stratTP5Box;
+        private System.Windows.Forms.Label label29;
     }
 }
 

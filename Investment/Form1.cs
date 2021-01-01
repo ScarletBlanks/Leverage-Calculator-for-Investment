@@ -211,29 +211,45 @@ namespace Investment
                 float SLperc;
                 float TP1perc;
                 float TP2perc;
+                float TP3perc;
+                float TP4perc;
+                float TP5perc;
                 if (stratRiskComboBox.Text == "Low")
                 {
-                     SLperc = (leverage/20)* 6;
-                     TP1perc = (leverage / 20) * 8;
-                     TP2perc = (leverage / 20) * 12;
+                     SLperc = (leverage/20)* 5;
+                     TP1perc = (leverage / 20) * 20;
+                     TP2perc = (leverage / 20) * 40;
+                     TP3perc = (leverage / 20) * 60;
+                     TP4perc = (leverage / 20) * 80;
+                     TP5perc = (leverage / 20) * 100;
                 }
                 else if (stratRiskComboBox.Text == "Medium")
                 {
                      SLperc = (leverage / 20) * 10;
-                     TP1perc = (leverage / 20) * 12;
-                     TP2perc = (leverage / 20) * 20;
+                    TP1perc = (leverage / 20) * 20;
+                    TP2perc = (leverage / 20) * 40;
+                    TP3perc = (leverage / 20) * 60;
+                    TP4perc = (leverage / 20) * 80;
+                    TP5perc = (leverage / 20) * 100;
                 }
                 else if (stratRiskComboBox.Text == "High")
                 {
-                     SLperc = (leverage / 20) * 15;
-                     TP1perc = (leverage / 20) * 20;
-                     TP2perc = (leverage / 20) * 30;
+                    SLperc = (leverage / 20) * 15;
+                    TP1perc = (leverage / 20) * 20;
+                    TP2perc = (leverage / 20) * 40;
+                    TP3perc = (leverage / 20) * 60;
+                    TP4perc = (leverage / 20) * 80;
+                    TP5perc = (leverage / 20) * 100;
                 }
                 else
                 {
                      SLperc = 0;
                      TP1perc = 0;
                      TP2perc = 0;
+                     TP3perc = 0;
+                     TP4perc = 0;
+                     TP5perc = 0;
+
                 }
 
                 
@@ -243,12 +259,18 @@ namespace Investment
                     stratSLBox.Text = ((1 - ((SLperc / leverage) / 100)) * entry).ToString();
                     stratTP1Box.Text = ((1 + ((TP1perc / leverage) / 100)) * entry).ToString();
                     stratTP2Box.Text = ((1 + ((TP2perc / leverage) / 100)) * entry).ToString();
+                    stratTP3Box.Text = ((1 + ((TP3perc / leverage) / 100)) * entry).ToString();
+                    stratTP4Box.Text = ((1 + ((TP4perc / leverage) / 100)) * entry).ToString();
+                    stratTP5Box.Text = ((1 + ((TP5perc / leverage) / 100)) * entry).ToString();
                 }
                 else if (comboBox6.Text == "Short")
                 {
                     stratSLBox.Text = ((1 + ((SLperc / leverage) / 100)) * entry).ToString();
                     stratTP1Box.Text = ((1 - ((TP1perc / leverage) / 100)) * entry).ToString();
                     stratTP2Box.Text = ((1 - ((TP2perc / leverage) / 100)) * entry).ToString();
+                    stratTP3Box.Text = ((1 - ((TP3perc / leverage) / 100)) * entry).ToString();
+                    stratTP4Box.Text = ((1 - ((TP4perc / leverage) / 100)) * entry).ToString();
+                    stratTP5Box.Text = ((1 - ((TP5perc / leverage) / 100)) * entry).ToString();
                 }
                 else
                 {
@@ -260,6 +282,11 @@ namespace Investment
             {
                 MessageBox.Show("error");
             }
+        }
+
+        private void textBox2_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }
