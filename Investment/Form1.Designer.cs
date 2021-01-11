@@ -82,6 +82,8 @@
             this.label18 = new System.Windows.Forms.Label();
             this.sEntryBox = new System.Windows.Forms.TextBox();
             this.tabPage6 = new System.Windows.Forms.TabPage();
+            this.percTP3 = new System.Windows.Forms.TextBox();
+            this.label19 = new System.Windows.Forms.Label();
             this.percTP2 = new System.Windows.Forms.TextBox();
             this.label29 = new System.Windows.Forms.Label();
             this.percTP1 = new System.Windows.Forms.TextBox();
@@ -100,8 +102,6 @@
             this.stratLevBox = new System.Windows.Forms.TextBox();
             this.label22 = new System.Windows.Forms.Label();
             this.stratEntryBox = new System.Windows.Forms.TextBox();
-            this.label19 = new System.Windows.Forms.Label();
-            this.percTP3 = new System.Windows.Forms.TextBox();
             this.tabControl.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.tabPage2.SuspendLayout();
@@ -113,12 +113,12 @@
             // 
             // tabControl
             // 
+            this.tabControl.Controls.Add(this.tabPage6);
             this.tabControl.Controls.Add(this.tabPage1);
             this.tabControl.Controls.Add(this.tabPage2);
             this.tabControl.Controls.Add(this.tabPage3);
             this.tabControl.Controls.Add(this.tabPage4);
             this.tabControl.Controls.Add(this.tabPage5);
-            this.tabControl.Controls.Add(this.tabPage6);
             this.tabControl.Location = new System.Drawing.Point(12, 6);
             this.tabControl.Name = "tabControl";
             this.tabControl.SelectedIndex = 0;
@@ -141,7 +141,7 @@
             this.tabPage1.Location = new System.Drawing.Point(4, 22);
             this.tabPage1.Name = "tabPage1";
             this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage1.Size = new System.Drawing.Size(334, 169);
+            this.tabPage1.Size = new System.Drawing.Size(334, 175);
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "Exit";
             this.tabPage1.Click += new System.EventHandler(this.tabPage1_Click);
@@ -244,7 +244,7 @@
             this.tabPage2.Location = new System.Drawing.Point(4, 22);
             this.tabPage2.Name = "tabPage2";
             this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage2.Size = new System.Drawing.Size(343, 183);
+            this.tabPage2.Size = new System.Drawing.Size(334, 175);
             this.tabPage2.TabIndex = 3;
             this.tabPage2.Text = "Profit";
             // 
@@ -343,7 +343,7 @@
             this.tabPage3.Controls.Add(this.bLineBox);
             this.tabPage3.Location = new System.Drawing.Point(4, 22);
             this.tabPage3.Name = "tabPage3";
-            this.tabPage3.Size = new System.Drawing.Size(343, 183);
+            this.tabPage3.Size = new System.Drawing.Size(334, 175);
             this.tabPage3.TabIndex = 2;
             this.tabPage3.Text = "Breakout ";
             // 
@@ -626,6 +626,23 @@
             this.tabPage6.Text = "Strategy";
             this.tabPage6.Click += new System.EventHandler(this.tabPage6_Click);
             // 
+            // percTP3
+            // 
+            this.percTP3.Location = new System.Drawing.Point(174, 136);
+            this.percTP3.Name = "percTP3";
+            this.percTP3.Size = new System.Drawing.Size(76, 20);
+            this.percTP3.TabIndex = 55;
+            this.percTP3.Text = "200";
+            // 
+            // label19
+            // 
+            this.label19.AutoSize = true;
+            this.label19.Location = new System.Drawing.Point(141, 139);
+            this.label19.Name = "label19";
+            this.label19.Size = new System.Drawing.Size(15, 13);
+            this.label19.TabIndex = 54;
+            this.label19.Text = "%";
+            // 
             // percTP2
             // 
             this.percTP2.Location = new System.Drawing.Point(174, 111);
@@ -778,23 +795,6 @@
             this.stratEntryBox.Name = "stratEntryBox";
             this.stratEntryBox.Size = new System.Drawing.Size(76, 20);
             this.stratEntryBox.TabIndex = 31;
-            // 
-            // label19
-            // 
-            this.label19.AutoSize = true;
-            this.label19.Location = new System.Drawing.Point(141, 139);
-            this.label19.Name = "label19";
-            this.label19.Size = new System.Drawing.Size(15, 13);
-            this.label19.TabIndex = 54;
-            this.label19.Text = "%";
-            // 
-            // percTP3
-            // 
-            this.percTP3.Location = new System.Drawing.Point(174, 136);
-            this.percTP3.Name = "percTP3";
-            this.percTP3.Size = new System.Drawing.Size(76, 20);
-            this.percTP3.TabIndex = 55;
-            this.percTP3.Text = "200";
             // 
             // Form1
             // 

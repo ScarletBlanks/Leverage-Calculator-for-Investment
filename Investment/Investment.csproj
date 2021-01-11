@@ -48,7 +48,7 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup>
-    <ApplicationIcon>binlogo.ico</ApplicationIcon>
+    <ApplicationIcon>n3bbisckibe46vrpgzj5.ico</ApplicationIcon>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
@@ -99,6 +99,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="binlogo.ico" />
+    <Content Include="n3bbisckibe46vrpgzj5.ico" />
   </ItemGroup>
   <ItemGroup>
     <BootstrapperPackage Include=".NETFramework,Version=v4.7.2">
