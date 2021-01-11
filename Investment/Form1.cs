@@ -35,9 +35,6 @@ namespace Investment
             comboBox6.Items.Add("Long");
             comboBox6.Items.Add("Short");
 
-            stratRiskComboBox.Items.Add("Low");
-            stratRiskComboBox.Items.Add("Medium");
-            stratRiskComboBox.Items.Add("High");
         }
 
         private void tabPage1_Click(object sender, EventArgs e)
@@ -207,70 +204,23 @@ namespace Investment
                 float leverage = float.Parse(stratLevBox.Text);
                 float entry = float.Parse(stratEntryBox.Text);
 
+                float TP1perc = float.Parse(percTP1.Text);
+                float TP2perc = float.Parse(percTP2.Text);
+                float TP3perc = float.Parse(percTP3.Text);
 
-                float SLperc;
-                float TP1perc;
-                float TP2perc;
-                float TP3perc;
-                float TP4perc;
-                float TP5perc;
-                if (stratRiskComboBox.Text == "Low")
-                {
-                     SLperc = (leverage/20)* 5;
-                     TP1perc = (leverage / 20) * 20;
-                     TP2perc = (leverage / 20) * 40;
-                     TP3perc = (leverage / 20) * 60;
-                     TP4perc = (leverage / 20) * 80;
-                     TP5perc = (leverage / 20) * 100;
-                }
-                else if (stratRiskComboBox.Text == "Medium")
-                {
-                     SLperc = (leverage / 20) * 10;
-                    TP1perc = (leverage / 20) * 20;
-                    TP2perc = (leverage / 20) * 40;
-                    TP3perc = (leverage / 20) * 60;
-                    TP4perc = (leverage / 20) * 80;
-                    TP5perc = (leverage / 20) * 100;
-                }
-                else if (stratRiskComboBox.Text == "High")
-                {
-                    SLperc = (leverage / 20) * 15;
-                    TP1perc = (leverage / 20) * 20;
-                    TP2perc = (leverage / 20) * 40;
-                    TP3perc = (leverage / 20) * 60;
-                    TP4perc = (leverage / 20) * 80;
-                    TP5perc = (leverage / 20) * 100;
-                }
-                else
-                {
-                     SLperc = 0;
-                     TP1perc = 0;
-                     TP2perc = 0;
-                     TP3perc = 0;
-                     TP4perc = 0;
-                     TP5perc = 0;
 
-                }
-
-                
 
                 if (comboBox6.Text == "Long")
                 {
-                    stratSLBox.Text = ((1 - ((SLperc / leverage) / 100)) * entry).ToString();
                     stratTP1Box.Text = ((1 + ((TP1perc / leverage) / 100)) * entry).ToString();
                     stratTP2Box.Text = ((1 + ((TP2perc / leverage) / 100)) * entry).ToString();
                     stratTP3Box.Text = ((1 + ((TP3perc / leverage) / 100)) * entry).ToString();
-                    stratTP4Box.Text = ((1 + ((TP4perc / leverage) / 100)) * entry).ToString();
-                    stratTP5Box.Text = ((1 + ((TP5perc / leverage) / 100)) * entry).ToString();
                 }
                 else if (comboBox6.Text == "Short")
                 {
-                    stratSLBox.Text = ((1 + ((SLperc / leverage) / 100)) * entry).ToString();
                     stratTP1Box.Text = ((1 - ((TP1perc / leverage) / 100)) * entry).ToString();
                     stratTP2Box.Text = ((1 - ((TP2perc / leverage) / 100)) * entry).ToString();
                     stratTP3Box.Text = ((1 - ((TP3perc / leverage) / 100)) * entry).ToString();
-                    stratTP4Box.Text = ((1 - ((TP4perc / leverage) / 100)) * entry).ToString();
-                    stratTP5Box.Text = ((1 - ((TP5perc / leverage) / 100)) * entry).ToString();
                 }
                 else
                 {
