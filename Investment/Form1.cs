@@ -238,5 +238,15 @@ namespace Investment
         {
 
         }
+
+        private void button7_Click(object sender, EventArgs e)
+        {
+            float localToUSD = 1 / float.Parse(ConvRate.Text);
+            float p2pLocalToUSD = 1f / float.Parse(P2PConvRate.Text);
+            float moneyPNL = (float.Parse(LocalConvert.Text) * p2pLocalToUSD) - (float.Parse(LocalConvert.Text) * localToUSD);
+
+            AmtPNL.Text = "$" + moneyPNL.ToString();
+
+        }
     }
 }

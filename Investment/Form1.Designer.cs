@@ -30,6 +30,27 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.tabControl = new System.Windows.Forms.TabControl();
+            this.tabPage6 = new System.Windows.Forms.TabPage();
+            this.percTP3 = new System.Windows.Forms.TextBox();
+            this.label19 = new System.Windows.Forms.Label();
+            this.percTP2 = new System.Windows.Forms.TextBox();
+            this.label29 = new System.Windows.Forms.Label();
+            this.percTP1 = new System.Windows.Forms.TextBox();
+            this.label27 = new System.Windows.Forms.Label();
+            this.stratTP3Box = new System.Windows.Forms.TextBox();
+            this.label28 = new System.Windows.Forms.Label();
+            this.stratTP2Box = new System.Windows.Forms.TextBox();
+            this.label26 = new System.Windows.Forms.Label();
+            this.label25 = new System.Windows.Forms.Label();
+            this.label23 = new System.Windows.Forms.Label();
+            this.comboBox6 = new System.Windows.Forms.ComboBox();
+            this.button6 = new System.Windows.Forms.Button();
+            this.stratTP1Box = new System.Windows.Forms.TextBox();
+            this.label20 = new System.Windows.Forms.Label();
+            this.label21 = new System.Windows.Forms.Label();
+            this.stratLevBox = new System.Windows.Forms.TextBox();
+            this.label22 = new System.Windows.Forms.Label();
+            this.stratEntryBox = new System.Windows.Forms.TextBox();
             this.tabPage1 = new System.Windows.Forms.TabPage();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.button1 = new System.Windows.Forms.Button();
@@ -81,34 +102,23 @@
             this.sAcceptLossBox = new System.Windows.Forms.TextBox();
             this.label18 = new System.Windows.Forms.Label();
             this.sEntryBox = new System.Windows.Forms.TextBox();
-            this.tabPage6 = new System.Windows.Forms.TabPage();
-            this.percTP3 = new System.Windows.Forms.TextBox();
-            this.label19 = new System.Windows.Forms.Label();
-            this.percTP2 = new System.Windows.Forms.TextBox();
-            this.label29 = new System.Windows.Forms.Label();
-            this.percTP1 = new System.Windows.Forms.TextBox();
-            this.label27 = new System.Windows.Forms.Label();
-            this.stratTP3Box = new System.Windows.Forms.TextBox();
-            this.label28 = new System.Windows.Forms.Label();
-            this.stratTP2Box = new System.Windows.Forms.TextBox();
-            this.label26 = new System.Windows.Forms.Label();
-            this.label25 = new System.Windows.Forms.Label();
-            this.label23 = new System.Windows.Forms.Label();
-            this.comboBox6 = new System.Windows.Forms.ComboBox();
-            this.button6 = new System.Windows.Forms.Button();
-            this.stratTP1Box = new System.Windows.Forms.TextBox();
-            this.label20 = new System.Windows.Forms.Label();
-            this.label21 = new System.Windows.Forms.Label();
-            this.stratLevBox = new System.Windows.Forms.TextBox();
-            this.label22 = new System.Windows.Forms.Label();
-            this.stratEntryBox = new System.Windows.Forms.TextBox();
+            this.tabPage7 = new System.Windows.Forms.TabPage();
+            this.AmtPNL = new System.Windows.Forms.Label();
+            this.button7 = new System.Windows.Forms.Button();
+            this.label31 = new System.Windows.Forms.Label();
+            this.LocalConvert = new System.Windows.Forms.TextBox();
+            this.label30 = new System.Windows.Forms.Label();
+            this.label24 = new System.Windows.Forms.Label();
+            this.P2PConvRate = new System.Windows.Forms.TextBox();
+            this.ConvRate = new System.Windows.Forms.TextBox();
             this.tabControl.SuspendLayout();
+            this.tabPage6.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.tabPage2.SuspendLayout();
             this.tabPage3.SuspendLayout();
             this.tabPage4.SuspendLayout();
             this.tabPage5.SuspendLayout();
-            this.tabPage6.SuspendLayout();
+            this.tabPage7.SuspendLayout();
             this.SuspendLayout();
             // 
             // tabControl
@@ -119,482 +129,12 @@
             this.tabControl.Controls.Add(this.tabPage3);
             this.tabControl.Controls.Add(this.tabPage4);
             this.tabControl.Controls.Add(this.tabPage5);
+            this.tabControl.Controls.Add(this.tabPage7);
             this.tabControl.Location = new System.Drawing.Point(12, 6);
             this.tabControl.Name = "tabControl";
             this.tabControl.SelectedIndex = 0;
-            this.tabControl.Size = new System.Drawing.Size(342, 201);
+            this.tabControl.Size = new System.Drawing.Size(371, 196);
             this.tabControl.TabIndex = 0;
-            // 
-            // tabPage1
-            // 
-            this.tabPage1.BackColor = System.Drawing.Color.GhostWhite;
-            this.tabPage1.Controls.Add(this.comboBox1);
-            this.tabPage1.Controls.Add(this.button1);
-            this.tabPage1.Controls.Add(this.exitBox);
-            this.tabPage1.Controls.Add(this.label4);
-            this.tabPage1.Controls.Add(this.label3);
-            this.tabPage1.Controls.Add(this.entryBox);
-            this.tabPage1.Controls.Add(this.leverageBox);
-            this.tabPage1.Controls.Add(this.label2);
-            this.tabPage1.Controls.Add(this.label1);
-            this.tabPage1.Controls.Add(this.profitBox);
-            this.tabPage1.Location = new System.Drawing.Point(4, 22);
-            this.tabPage1.Name = "tabPage1";
-            this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage1.Size = new System.Drawing.Size(334, 175);
-            this.tabPage1.TabIndex = 0;
-            this.tabPage1.Text = "Exit";
-            this.tabPage1.Click += new System.EventHandler(this.tabPage1_Click);
-            // 
-            // comboBox1
-            // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(193, 24);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(87, 21);
-            this.comboBox1.TabIndex = 19;
-            // 
-            // button1
-            // 
-            this.button1.Location = new System.Drawing.Point(193, 125);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(87, 23);
-            this.button1.TabIndex = 18;
-            this.button1.Text = "calculate";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click_1);
-            // 
-            // exitBox
-            // 
-            this.exitBox.Location = new System.Drawing.Point(85, 125);
-            this.exitBox.Name = "exitBox";
-            this.exitBox.Size = new System.Drawing.Size(76, 20);
-            this.exitBox.TabIndex = 17;
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(26, 128);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(23, 13);
-            this.label4.TabIndex = 16;
-            this.label4.Text = "exit";
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(26, 94);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(30, 13);
-            this.label3.TabIndex = 15;
-            this.label3.Text = "entry";
-            // 
-            // entryBox
-            // 
-            this.entryBox.Location = new System.Drawing.Point(85, 94);
-            this.entryBox.Name = "entryBox";
-            this.entryBox.Size = new System.Drawing.Size(76, 20);
-            this.entryBox.TabIndex = 14;
-            // 
-            // leverageBox
-            // 
-            this.leverageBox.Location = new System.Drawing.Point(85, 61);
-            this.leverageBox.Name = "leverageBox";
-            this.leverageBox.Size = new System.Drawing.Size(76, 20);
-            this.leverageBox.TabIndex = 13;
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(23, 61);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(56, 13);
-            this.label2.TabIndex = 12;
-            this.label2.Text = "leverage x";
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(26, 28);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(38, 13);
-            this.label1.TabIndex = 11;
-            this.label1.Text = "profit%";
-            // 
-            // profitBox
-            // 
-            this.profitBox.Location = new System.Drawing.Point(85, 25);
-            this.profitBox.Name = "profitBox";
-            this.profitBox.Size = new System.Drawing.Size(76, 20);
-            this.profitBox.TabIndex = 10;
-            // 
-            // tabPage2
-            // 
-            this.tabPage2.BackColor = System.Drawing.Color.GhostWhite;
-            this.tabPage2.Controls.Add(this.comboBox2);
-            this.tabPage2.Controls.Add(this.button2);
-            this.tabPage2.Controls.Add(this.pProfitBox);
-            this.tabPage2.Controls.Add(this.label5);
-            this.tabPage2.Controls.Add(this.label6);
-            this.tabPage2.Controls.Add(this.pLevBox);
-            this.tabPage2.Controls.Add(this.pExitBox);
-            this.tabPage2.Controls.Add(this.label7);
-            this.tabPage2.Controls.Add(this.label8);
-            this.tabPage2.Controls.Add(this.pEntryBox);
-            this.tabPage2.Location = new System.Drawing.Point(4, 22);
-            this.tabPage2.Name = "tabPage2";
-            this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage2.Size = new System.Drawing.Size(334, 175);
-            this.tabPage2.TabIndex = 3;
-            this.tabPage2.Text = "Profit";
-            // 
-            // comboBox2
-            // 
-            this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Location = new System.Drawing.Point(193, 24);
-            this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(87, 21);
-            this.comboBox2.TabIndex = 19;
-            // 
-            // button2
-            // 
-            this.button2.Location = new System.Drawing.Point(193, 125);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(87, 23);
-            this.button2.TabIndex = 18;
-            this.button2.Text = "calculate";
-            this.button2.UseVisualStyleBackColor = true;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
-            // 
-            // pProfitBox
-            // 
-            this.pProfitBox.Location = new System.Drawing.Point(85, 125);
-            this.pProfitBox.Name = "pProfitBox";
-            this.pProfitBox.Size = new System.Drawing.Size(76, 20);
-            this.pProfitBox.TabIndex = 17;
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(26, 128);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(30, 13);
-            this.label5.TabIndex = 16;
-            this.label5.Text = "profit";
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(26, 94);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(56, 13);
-            this.label6.TabIndex = 15;
-            this.label6.Text = "leverage x";
-            // 
-            // pLevBox
-            // 
-            this.pLevBox.Location = new System.Drawing.Point(85, 94);
-            this.pLevBox.Name = "pLevBox";
-            this.pLevBox.Size = new System.Drawing.Size(76, 20);
-            this.pLevBox.TabIndex = 14;
-            // 
-            // pExitBox
-            // 
-            this.pExitBox.Location = new System.Drawing.Point(85, 61);
-            this.pExitBox.Name = "pExitBox";
-            this.pExitBox.Size = new System.Drawing.Size(76, 20);
-            this.pExitBox.TabIndex = 13;
-            // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(25, 61);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(23, 13);
-            this.label7.TabIndex = 12;
-            this.label7.Text = "exit";
-            // 
-            // label8
-            // 
-            this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(26, 28);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(30, 13);
-            this.label8.TabIndex = 11;
-            this.label8.Text = "entry";
-            // 
-            // pEntryBox
-            // 
-            this.pEntryBox.Location = new System.Drawing.Point(85, 25);
-            this.pEntryBox.Name = "pEntryBox";
-            this.pEntryBox.Size = new System.Drawing.Size(76, 20);
-            this.pEntryBox.TabIndex = 10;
-            // 
-            // tabPage3
-            // 
-            this.tabPage3.BackColor = System.Drawing.Color.GhostWhite;
-            this.tabPage3.Controls.Add(this.label11);
-            this.tabPage3.Controls.Add(this.bBreakoutMarginBox);
-            this.tabPage3.Controls.Add(this.bBreakoutValBox);
-            this.tabPage3.Controls.Add(this.label10);
-            this.tabPage3.Controls.Add(this.comboBox3);
-            this.tabPage3.Controls.Add(this.button3);
-            this.tabPage3.Controls.Add(this.label9);
-            this.tabPage3.Controls.Add(this.bLineBox);
-            this.tabPage3.Location = new System.Drawing.Point(4, 22);
-            this.tabPage3.Name = "tabPage3";
-            this.tabPage3.Size = new System.Drawing.Size(334, 175);
-            this.tabPage3.TabIndex = 2;
-            this.tabPage3.Text = "Breakout ";
-            // 
-            // label11
-            // 
-            this.label11.Location = new System.Drawing.Point(14, 57);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(65, 47);
-            this.label11.TabIndex = 27;
-            this.label11.Text = "breakout confirmation margin %";
-            // 
-            // bBreakoutMarginBox
-            // 
-            this.bBreakoutMarginBox.Location = new System.Drawing.Point(85, 69);
-            this.bBreakoutMarginBox.Name = "bBreakoutMarginBox";
-            this.bBreakoutMarginBox.Size = new System.Drawing.Size(76, 20);
-            this.bBreakoutMarginBox.TabIndex = 26;
-            this.bBreakoutMarginBox.Text = "0.88";
-            // 
-            // bBreakoutValBox
-            // 
-            this.bBreakoutValBox.Location = new System.Drawing.Point(85, 125);
-            this.bBreakoutValBox.Name = "bBreakoutValBox";
-            this.bBreakoutValBox.Size = new System.Drawing.Size(76, 20);
-            this.bBreakoutValBox.TabIndex = 25;
-            // 
-            // label10
-            // 
-            this.label10.Location = new System.Drawing.Point(14, 122);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(56, 44);
-            this.label10.TabIndex = 24;
-            this.label10.Text = "breakout confirmed";
-            // 
-            // comboBox3
-            // 
-            this.comboBox3.FormattingEnabled = true;
-            this.comboBox3.Location = new System.Drawing.Point(203, 21);
-            this.comboBox3.Name = "comboBox3";
-            this.comboBox3.Size = new System.Drawing.Size(87, 21);
-            this.comboBox3.TabIndex = 23;
-            // 
-            // button3
-            // 
-            this.button3.Location = new System.Drawing.Point(203, 122);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(87, 23);
-            this.button3.TabIndex = 22;
-            this.button3.Text = "calculate";
-            this.button3.UseVisualStyleBackColor = true;
-            this.button3.Click += new System.EventHandler(this.button3_Click);
-            // 
-            // label9
-            // 
-            this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(14, 25);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(23, 13);
-            this.label9.TabIndex = 21;
-            this.label9.Text = "line";
-            // 
-            // bLineBox
-            // 
-            this.bLineBox.Location = new System.Drawing.Point(85, 22);
-            this.bLineBox.Name = "bLineBox";
-            this.bLineBox.Size = new System.Drawing.Size(76, 20);
-            this.bLineBox.TabIndex = 20;
-            // 
-            // tabPage4
-            // 
-            this.tabPage4.BackColor = System.Drawing.Color.GhostWhite;
-            this.tabPage4.Controls.Add(this.label12);
-            this.tabPage4.Controls.Add(this.lLeverageBox);
-            this.tabPage4.Controls.Add(this.lLiqBox);
-            this.tabPage4.Controls.Add(this.label13);
-            this.tabPage4.Controls.Add(this.comboBox4);
-            this.tabPage4.Controls.Add(this.button4);
-            this.tabPage4.Controls.Add(this.label14);
-            this.tabPage4.Controls.Add(this.lEntryBox);
-            this.tabPage4.Location = new System.Drawing.Point(4, 22);
-            this.tabPage4.Name = "tabPage4";
-            this.tabPage4.Size = new System.Drawing.Size(334, 175);
-            this.tabPage4.TabIndex = 4;
-            this.tabPage4.Text = "Liquidation";
-            this.tabPage4.Click += new System.EventHandler(this.tabPage4_Click);
-            // 
-            // label12
-            // 
-            this.label12.Location = new System.Drawing.Point(15, 66);
-            this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(65, 20);
-            this.label12.TabIndex = 35;
-            this.label12.Text = "leverage x";
-            // 
-            // lLeverageBox
-            // 
-            this.lLeverageBox.Location = new System.Drawing.Point(86, 66);
-            this.lLeverageBox.Name = "lLeverageBox";
-            this.lLeverageBox.Size = new System.Drawing.Size(76, 20);
-            this.lLeverageBox.TabIndex = 34;
-            // 
-            // lLiqBox
-            // 
-            this.lLiqBox.Location = new System.Drawing.Point(86, 122);
-            this.lLiqBox.Name = "lLiqBox";
-            this.lLiqBox.Size = new System.Drawing.Size(76, 20);
-            this.lLiqBox.TabIndex = 33;
-            // 
-            // label13
-            // 
-            this.label13.Location = new System.Drawing.Point(15, 119);
-            this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(56, 23);
-            this.label13.TabIndex = 32;
-            this.label13.Text = "liquidate";
-            // 
-            // comboBox4
-            // 
-            this.comboBox4.FormattingEnabled = true;
-            this.comboBox4.Location = new System.Drawing.Point(204, 18);
-            this.comboBox4.Name = "comboBox4";
-            this.comboBox4.Size = new System.Drawing.Size(87, 21);
-            this.comboBox4.TabIndex = 31;
-            // 
-            // button4
-            // 
-            this.button4.Location = new System.Drawing.Point(204, 119);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(87, 23);
-            this.button4.TabIndex = 30;
-            this.button4.Text = "calculate";
-            this.button4.UseVisualStyleBackColor = true;
-            this.button4.Click += new System.EventHandler(this.button4_Click);
-            // 
-            // label14
-            // 
-            this.label14.AutoSize = true;
-            this.label14.Location = new System.Drawing.Point(15, 22);
-            this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(30, 13);
-            this.label14.TabIndex = 29;
-            this.label14.Text = "entry";
-            // 
-            // lEntryBox
-            // 
-            this.lEntryBox.Location = new System.Drawing.Point(86, 19);
-            this.lEntryBox.Name = "lEntryBox";
-            this.lEntryBox.Size = new System.Drawing.Size(76, 20);
-            this.lEntryBox.TabIndex = 28;
-            // 
-            // tabPage5
-            // 
-            this.tabPage5.BackColor = System.Drawing.Color.GhostWhite;
-            this.tabPage5.Controls.Add(this.label17);
-            this.tabPage5.Controls.Add(this.comboBox5);
-            this.tabPage5.Controls.Add(this.button5);
-            this.tabPage5.Controls.Add(this.sSLBox);
-            this.tabPage5.Controls.Add(this.label15);
-            this.tabPage5.Controls.Add(this.label16);
-            this.tabPage5.Controls.Add(this.sLevBox);
-            this.tabPage5.Controls.Add(this.sAcceptLossBox);
-            this.tabPage5.Controls.Add(this.label18);
-            this.tabPage5.Controls.Add(this.sEntryBox);
-            this.tabPage5.Location = new System.Drawing.Point(4, 22);
-            this.tabPage5.Name = "tabPage5";
-            this.tabPage5.Size = new System.Drawing.Size(334, 175);
-            this.tabPage5.TabIndex = 5;
-            this.tabPage5.Text = "Stop Loss";
-            // 
-            // label17
-            // 
-            this.label17.Location = new System.Drawing.Point(23, 51);
-            this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(65, 47);
-            this.label17.TabIndex = 30;
-            this.label17.Text = "% acceptable loss";
-            // 
-            // comboBox5
-            // 
-            this.comboBox5.FormattingEnabled = true;
-            this.comboBox5.Location = new System.Drawing.Point(199, 19);
-            this.comboBox5.Name = "comboBox5";
-            this.comboBox5.Size = new System.Drawing.Size(87, 21);
-            this.comboBox5.TabIndex = 29;
-            // 
-            // button5
-            // 
-            this.button5.Location = new System.Drawing.Point(199, 134);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(87, 23);
-            this.button5.TabIndex = 28;
-            this.button5.Text = "calculate";
-            this.button5.UseVisualStyleBackColor = true;
-            this.button5.Click += new System.EventHandler(this.button5_Click);
-            // 
-            // sSLBox
-            // 
-            this.sSLBox.Location = new System.Drawing.Point(91, 137);
-            this.sSLBox.Name = "sSLBox";
-            this.sSLBox.Size = new System.Drawing.Size(76, 20);
-            this.sSLBox.TabIndex = 27;
-            // 
-            // label15
-            // 
-            this.label15.AutoSize = true;
-            this.label15.Location = new System.Drawing.Point(23, 140);
-            this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(32, 13);
-            this.label15.TabIndex = 26;
-            this.label15.Text = "SL at";
-            // 
-            // label16
-            // 
-            this.label16.AutoSize = true;
-            this.label16.Location = new System.Drawing.Point(23, 105);
-            this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(56, 13);
-            this.label16.TabIndex = 25;
-            this.label16.Text = "leverage x";
-            this.label16.Click += new System.EventHandler(this.label16_Click);
-            // 
-            // sLevBox
-            // 
-            this.sLevBox.Location = new System.Drawing.Point(91, 102);
-            this.sLevBox.Name = "sLevBox";
-            this.sLevBox.Size = new System.Drawing.Size(76, 20);
-            this.sLevBox.TabIndex = 24;
-            this.sLevBox.Text = "20";
-            // 
-            // sAcceptLossBox
-            // 
-            this.sAcceptLossBox.Location = new System.Drawing.Point(91, 60);
-            this.sAcceptLossBox.Name = "sAcceptLossBox";
-            this.sAcceptLossBox.Size = new System.Drawing.Size(76, 20);
-            this.sAcceptLossBox.TabIndex = 23;
-            // 
-            // label18
-            // 
-            this.label18.AutoSize = true;
-            this.label18.Location = new System.Drawing.Point(23, 22);
-            this.label18.Name = "label18";
-            this.label18.Size = new System.Drawing.Size(30, 13);
-            this.label18.TabIndex = 21;
-            this.label18.Text = "entry";
-            // 
-            // sEntryBox
-            // 
-            this.sEntryBox.Location = new System.Drawing.Point(91, 20);
-            this.sEntryBox.Name = "sEntryBox";
-            this.sEntryBox.Size = new System.Drawing.Size(76, 20);
-            this.sEntryBox.TabIndex = 20;
             // 
             // tabPage6
             // 
@@ -621,7 +161,7 @@
             this.tabPage6.Controls.Add(this.stratEntryBox);
             this.tabPage6.Location = new System.Drawing.Point(4, 22);
             this.tabPage6.Name = "tabPage6";
-            this.tabPage6.Size = new System.Drawing.Size(334, 175);
+            this.tabPage6.Size = new System.Drawing.Size(363, 170);
             this.tabPage6.TabIndex = 6;
             this.tabPage6.Text = "Strategy";
             this.tabPage6.Click += new System.EventHandler(this.tabPage6_Click);
@@ -796,18 +336,578 @@
             this.stratEntryBox.Size = new System.Drawing.Size(76, 20);
             this.stratEntryBox.TabIndex = 31;
             // 
+            // tabPage1
+            // 
+            this.tabPage1.BackColor = System.Drawing.Color.GhostWhite;
+            this.tabPage1.Controls.Add(this.comboBox1);
+            this.tabPage1.Controls.Add(this.button1);
+            this.tabPage1.Controls.Add(this.exitBox);
+            this.tabPage1.Controls.Add(this.label4);
+            this.tabPage1.Controls.Add(this.label3);
+            this.tabPage1.Controls.Add(this.entryBox);
+            this.tabPage1.Controls.Add(this.leverageBox);
+            this.tabPage1.Controls.Add(this.label2);
+            this.tabPage1.Controls.Add(this.label1);
+            this.tabPage1.Controls.Add(this.profitBox);
+            this.tabPage1.Location = new System.Drawing.Point(4, 22);
+            this.tabPage1.Name = "tabPage1";
+            this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage1.Size = new System.Drawing.Size(363, 170);
+            this.tabPage1.TabIndex = 0;
+            this.tabPage1.Text = "Exit";
+            this.tabPage1.Click += new System.EventHandler(this.tabPage1_Click);
+            // 
+            // comboBox1
+            // 
+            this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.Location = new System.Drawing.Point(193, 24);
+            this.comboBox1.Name = "comboBox1";
+            this.comboBox1.Size = new System.Drawing.Size(87, 21);
+            this.comboBox1.TabIndex = 19;
+            // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(193, 125);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(87, 23);
+            this.button1.TabIndex = 18;
+            this.button1.Text = "calculate";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click_1);
+            // 
+            // exitBox
+            // 
+            this.exitBox.Location = new System.Drawing.Point(85, 125);
+            this.exitBox.Name = "exitBox";
+            this.exitBox.Size = new System.Drawing.Size(76, 20);
+            this.exitBox.TabIndex = 17;
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(26, 128);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(23, 13);
+            this.label4.TabIndex = 16;
+            this.label4.Text = "exit";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(26, 94);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(30, 13);
+            this.label3.TabIndex = 15;
+            this.label3.Text = "entry";
+            // 
+            // entryBox
+            // 
+            this.entryBox.Location = new System.Drawing.Point(85, 94);
+            this.entryBox.Name = "entryBox";
+            this.entryBox.Size = new System.Drawing.Size(76, 20);
+            this.entryBox.TabIndex = 14;
+            // 
+            // leverageBox
+            // 
+            this.leverageBox.Location = new System.Drawing.Point(85, 61);
+            this.leverageBox.Name = "leverageBox";
+            this.leverageBox.Size = new System.Drawing.Size(76, 20);
+            this.leverageBox.TabIndex = 13;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(23, 61);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(56, 13);
+            this.label2.TabIndex = 12;
+            this.label2.Text = "leverage x";
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(26, 28);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(38, 13);
+            this.label1.TabIndex = 11;
+            this.label1.Text = "profit%";
+            // 
+            // profitBox
+            // 
+            this.profitBox.Location = new System.Drawing.Point(85, 25);
+            this.profitBox.Name = "profitBox";
+            this.profitBox.Size = new System.Drawing.Size(76, 20);
+            this.profitBox.TabIndex = 10;
+            // 
+            // tabPage2
+            // 
+            this.tabPage2.BackColor = System.Drawing.Color.GhostWhite;
+            this.tabPage2.Controls.Add(this.comboBox2);
+            this.tabPage2.Controls.Add(this.button2);
+            this.tabPage2.Controls.Add(this.pProfitBox);
+            this.tabPage2.Controls.Add(this.label5);
+            this.tabPage2.Controls.Add(this.label6);
+            this.tabPage2.Controls.Add(this.pLevBox);
+            this.tabPage2.Controls.Add(this.pExitBox);
+            this.tabPage2.Controls.Add(this.label7);
+            this.tabPage2.Controls.Add(this.label8);
+            this.tabPage2.Controls.Add(this.pEntryBox);
+            this.tabPage2.Location = new System.Drawing.Point(4, 22);
+            this.tabPage2.Name = "tabPage2";
+            this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage2.Size = new System.Drawing.Size(363, 170);
+            this.tabPage2.TabIndex = 3;
+            this.tabPage2.Text = "Profit";
+            // 
+            // comboBox2
+            // 
+            this.comboBox2.FormattingEnabled = true;
+            this.comboBox2.Location = new System.Drawing.Point(193, 24);
+            this.comboBox2.Name = "comboBox2";
+            this.comboBox2.Size = new System.Drawing.Size(87, 21);
+            this.comboBox2.TabIndex = 19;
+            // 
+            // button2
+            // 
+            this.button2.Location = new System.Drawing.Point(193, 125);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(87, 23);
+            this.button2.TabIndex = 18;
+            this.button2.Text = "calculate";
+            this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
+            // 
+            // pProfitBox
+            // 
+            this.pProfitBox.Location = new System.Drawing.Point(85, 125);
+            this.pProfitBox.Name = "pProfitBox";
+            this.pProfitBox.Size = new System.Drawing.Size(76, 20);
+            this.pProfitBox.TabIndex = 17;
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(26, 128);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(30, 13);
+            this.label5.TabIndex = 16;
+            this.label5.Text = "profit";
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Location = new System.Drawing.Point(26, 94);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(56, 13);
+            this.label6.TabIndex = 15;
+            this.label6.Text = "leverage x";
+            // 
+            // pLevBox
+            // 
+            this.pLevBox.Location = new System.Drawing.Point(85, 94);
+            this.pLevBox.Name = "pLevBox";
+            this.pLevBox.Size = new System.Drawing.Size(76, 20);
+            this.pLevBox.TabIndex = 14;
+            // 
+            // pExitBox
+            // 
+            this.pExitBox.Location = new System.Drawing.Point(85, 61);
+            this.pExitBox.Name = "pExitBox";
+            this.pExitBox.Size = new System.Drawing.Size(76, 20);
+            this.pExitBox.TabIndex = 13;
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Location = new System.Drawing.Point(25, 61);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(23, 13);
+            this.label7.TabIndex = 12;
+            this.label7.Text = "exit";
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Location = new System.Drawing.Point(26, 28);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(30, 13);
+            this.label8.TabIndex = 11;
+            this.label8.Text = "entry";
+            // 
+            // pEntryBox
+            // 
+            this.pEntryBox.Location = new System.Drawing.Point(85, 25);
+            this.pEntryBox.Name = "pEntryBox";
+            this.pEntryBox.Size = new System.Drawing.Size(76, 20);
+            this.pEntryBox.TabIndex = 10;
+            // 
+            // tabPage3
+            // 
+            this.tabPage3.BackColor = System.Drawing.Color.GhostWhite;
+            this.tabPage3.Controls.Add(this.label11);
+            this.tabPage3.Controls.Add(this.bBreakoutMarginBox);
+            this.tabPage3.Controls.Add(this.bBreakoutValBox);
+            this.tabPage3.Controls.Add(this.label10);
+            this.tabPage3.Controls.Add(this.comboBox3);
+            this.tabPage3.Controls.Add(this.button3);
+            this.tabPage3.Controls.Add(this.label9);
+            this.tabPage3.Controls.Add(this.bLineBox);
+            this.tabPage3.Location = new System.Drawing.Point(4, 22);
+            this.tabPage3.Name = "tabPage3";
+            this.tabPage3.Size = new System.Drawing.Size(363, 170);
+            this.tabPage3.TabIndex = 2;
+            this.tabPage3.Text = "Breakout ";
+            // 
+            // label11
+            // 
+            this.label11.Location = new System.Drawing.Point(14, 57);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(65, 47);
+            this.label11.TabIndex = 27;
+            this.label11.Text = "breakout confirmation margin %";
+            // 
+            // bBreakoutMarginBox
+            // 
+            this.bBreakoutMarginBox.Location = new System.Drawing.Point(85, 69);
+            this.bBreakoutMarginBox.Name = "bBreakoutMarginBox";
+            this.bBreakoutMarginBox.Size = new System.Drawing.Size(76, 20);
+            this.bBreakoutMarginBox.TabIndex = 26;
+            this.bBreakoutMarginBox.Text = "0.88";
+            // 
+            // bBreakoutValBox
+            // 
+            this.bBreakoutValBox.Location = new System.Drawing.Point(85, 125);
+            this.bBreakoutValBox.Name = "bBreakoutValBox";
+            this.bBreakoutValBox.Size = new System.Drawing.Size(76, 20);
+            this.bBreakoutValBox.TabIndex = 25;
+            // 
+            // label10
+            // 
+            this.label10.Location = new System.Drawing.Point(14, 122);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(56, 44);
+            this.label10.TabIndex = 24;
+            this.label10.Text = "breakout confirmed";
+            // 
+            // comboBox3
+            // 
+            this.comboBox3.FormattingEnabled = true;
+            this.comboBox3.Location = new System.Drawing.Point(203, 21);
+            this.comboBox3.Name = "comboBox3";
+            this.comboBox3.Size = new System.Drawing.Size(87, 21);
+            this.comboBox3.TabIndex = 23;
+            // 
+            // button3
+            // 
+            this.button3.Location = new System.Drawing.Point(203, 122);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(87, 23);
+            this.button3.TabIndex = 22;
+            this.button3.Text = "calculate";
+            this.button3.UseVisualStyleBackColor = true;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Location = new System.Drawing.Point(14, 25);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(23, 13);
+            this.label9.TabIndex = 21;
+            this.label9.Text = "line";
+            // 
+            // bLineBox
+            // 
+            this.bLineBox.Location = new System.Drawing.Point(85, 22);
+            this.bLineBox.Name = "bLineBox";
+            this.bLineBox.Size = new System.Drawing.Size(76, 20);
+            this.bLineBox.TabIndex = 20;
+            // 
+            // tabPage4
+            // 
+            this.tabPage4.BackColor = System.Drawing.Color.GhostWhite;
+            this.tabPage4.Controls.Add(this.label12);
+            this.tabPage4.Controls.Add(this.lLeverageBox);
+            this.tabPage4.Controls.Add(this.lLiqBox);
+            this.tabPage4.Controls.Add(this.label13);
+            this.tabPage4.Controls.Add(this.comboBox4);
+            this.tabPage4.Controls.Add(this.button4);
+            this.tabPage4.Controls.Add(this.label14);
+            this.tabPage4.Controls.Add(this.lEntryBox);
+            this.tabPage4.Location = new System.Drawing.Point(4, 22);
+            this.tabPage4.Name = "tabPage4";
+            this.tabPage4.Size = new System.Drawing.Size(363, 170);
+            this.tabPage4.TabIndex = 4;
+            this.tabPage4.Text = "Liquidation";
+            this.tabPage4.Click += new System.EventHandler(this.tabPage4_Click);
+            // 
+            // label12
+            // 
+            this.label12.Location = new System.Drawing.Point(15, 66);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(65, 20);
+            this.label12.TabIndex = 35;
+            this.label12.Text = "leverage x";
+            // 
+            // lLeverageBox
+            // 
+            this.lLeverageBox.Location = new System.Drawing.Point(86, 66);
+            this.lLeverageBox.Name = "lLeverageBox";
+            this.lLeverageBox.Size = new System.Drawing.Size(76, 20);
+            this.lLeverageBox.TabIndex = 34;
+            // 
+            // lLiqBox
+            // 
+            this.lLiqBox.Location = new System.Drawing.Point(86, 122);
+            this.lLiqBox.Name = "lLiqBox";
+            this.lLiqBox.Size = new System.Drawing.Size(76, 20);
+            this.lLiqBox.TabIndex = 33;
+            // 
+            // label13
+            // 
+            this.label13.Location = new System.Drawing.Point(15, 119);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(56, 23);
+            this.label13.TabIndex = 32;
+            this.label13.Text = "liquidate";
+            // 
+            // comboBox4
+            // 
+            this.comboBox4.FormattingEnabled = true;
+            this.comboBox4.Location = new System.Drawing.Point(204, 18);
+            this.comboBox4.Name = "comboBox4";
+            this.comboBox4.Size = new System.Drawing.Size(87, 21);
+            this.comboBox4.TabIndex = 31;
+            // 
+            // button4
+            // 
+            this.button4.Location = new System.Drawing.Point(204, 119);
+            this.button4.Name = "button4";
+            this.button4.Size = new System.Drawing.Size(87, 23);
+            this.button4.TabIndex = 30;
+            this.button4.Text = "calculate";
+            this.button4.UseVisualStyleBackColor = true;
+            this.button4.Click += new System.EventHandler(this.button4_Click);
+            // 
+            // label14
+            // 
+            this.label14.AutoSize = true;
+            this.label14.Location = new System.Drawing.Point(15, 22);
+            this.label14.Name = "label14";
+            this.label14.Size = new System.Drawing.Size(30, 13);
+            this.label14.TabIndex = 29;
+            this.label14.Text = "entry";
+            // 
+            // lEntryBox
+            // 
+            this.lEntryBox.Location = new System.Drawing.Point(86, 19);
+            this.lEntryBox.Name = "lEntryBox";
+            this.lEntryBox.Size = new System.Drawing.Size(76, 20);
+            this.lEntryBox.TabIndex = 28;
+            // 
+            // tabPage5
+            // 
+            this.tabPage5.BackColor = System.Drawing.Color.GhostWhite;
+            this.tabPage5.Controls.Add(this.label17);
+            this.tabPage5.Controls.Add(this.comboBox5);
+            this.tabPage5.Controls.Add(this.button5);
+            this.tabPage5.Controls.Add(this.sSLBox);
+            this.tabPage5.Controls.Add(this.label15);
+            this.tabPage5.Controls.Add(this.label16);
+            this.tabPage5.Controls.Add(this.sLevBox);
+            this.tabPage5.Controls.Add(this.sAcceptLossBox);
+            this.tabPage5.Controls.Add(this.label18);
+            this.tabPage5.Controls.Add(this.sEntryBox);
+            this.tabPage5.Location = new System.Drawing.Point(4, 22);
+            this.tabPage5.Name = "tabPage5";
+            this.tabPage5.Size = new System.Drawing.Size(363, 170);
+            this.tabPage5.TabIndex = 5;
+            this.tabPage5.Text = "Stop Loss";
+            // 
+            // label17
+            // 
+            this.label17.Location = new System.Drawing.Point(23, 51);
+            this.label17.Name = "label17";
+            this.label17.Size = new System.Drawing.Size(65, 47);
+            this.label17.TabIndex = 30;
+            this.label17.Text = "% acceptable loss";
+            // 
+            // comboBox5
+            // 
+            this.comboBox5.FormattingEnabled = true;
+            this.comboBox5.Location = new System.Drawing.Point(199, 19);
+            this.comboBox5.Name = "comboBox5";
+            this.comboBox5.Size = new System.Drawing.Size(87, 21);
+            this.comboBox5.TabIndex = 29;
+            // 
+            // button5
+            // 
+            this.button5.Location = new System.Drawing.Point(199, 134);
+            this.button5.Name = "button5";
+            this.button5.Size = new System.Drawing.Size(87, 23);
+            this.button5.TabIndex = 28;
+            this.button5.Text = "calculate";
+            this.button5.UseVisualStyleBackColor = true;
+            this.button5.Click += new System.EventHandler(this.button5_Click);
+            // 
+            // sSLBox
+            // 
+            this.sSLBox.Location = new System.Drawing.Point(91, 137);
+            this.sSLBox.Name = "sSLBox";
+            this.sSLBox.Size = new System.Drawing.Size(76, 20);
+            this.sSLBox.TabIndex = 27;
+            // 
+            // label15
+            // 
+            this.label15.AutoSize = true;
+            this.label15.Location = new System.Drawing.Point(23, 140);
+            this.label15.Name = "label15";
+            this.label15.Size = new System.Drawing.Size(32, 13);
+            this.label15.TabIndex = 26;
+            this.label15.Text = "SL at";
+            // 
+            // label16
+            // 
+            this.label16.AutoSize = true;
+            this.label16.Location = new System.Drawing.Point(23, 105);
+            this.label16.Name = "label16";
+            this.label16.Size = new System.Drawing.Size(56, 13);
+            this.label16.TabIndex = 25;
+            this.label16.Text = "leverage x";
+            this.label16.Click += new System.EventHandler(this.label16_Click);
+            // 
+            // sLevBox
+            // 
+            this.sLevBox.Location = new System.Drawing.Point(91, 102);
+            this.sLevBox.Name = "sLevBox";
+            this.sLevBox.Size = new System.Drawing.Size(76, 20);
+            this.sLevBox.TabIndex = 24;
+            this.sLevBox.Text = "20";
+            // 
+            // sAcceptLossBox
+            // 
+            this.sAcceptLossBox.Location = new System.Drawing.Point(91, 60);
+            this.sAcceptLossBox.Name = "sAcceptLossBox";
+            this.sAcceptLossBox.Size = new System.Drawing.Size(76, 20);
+            this.sAcceptLossBox.TabIndex = 23;
+            // 
+            // label18
+            // 
+            this.label18.AutoSize = true;
+            this.label18.Location = new System.Drawing.Point(23, 22);
+            this.label18.Name = "label18";
+            this.label18.Size = new System.Drawing.Size(30, 13);
+            this.label18.TabIndex = 21;
+            this.label18.Text = "entry";
+            // 
+            // sEntryBox
+            // 
+            this.sEntryBox.Location = new System.Drawing.Point(91, 20);
+            this.sEntryBox.Name = "sEntryBox";
+            this.sEntryBox.Size = new System.Drawing.Size(76, 20);
+            this.sEntryBox.TabIndex = 20;
+            // 
+            // tabPage7
+            // 
+            this.tabPage7.Controls.Add(this.AmtPNL);
+            this.tabPage7.Controls.Add(this.button7);
+            this.tabPage7.Controls.Add(this.label31);
+            this.tabPage7.Controls.Add(this.LocalConvert);
+            this.tabPage7.Controls.Add(this.label30);
+            this.tabPage7.Controls.Add(this.label24);
+            this.tabPage7.Controls.Add(this.P2PConvRate);
+            this.tabPage7.Controls.Add(this.ConvRate);
+            this.tabPage7.Location = new System.Drawing.Point(4, 22);
+            this.tabPage7.Name = "tabPage7";
+            this.tabPage7.Size = new System.Drawing.Size(363, 170);
+            this.tabPage7.TabIndex = 7;
+            this.tabPage7.Text = "E/R";
+            this.tabPage7.UseVisualStyleBackColor = true;
+            // 
+            // AmtPNL
+            // 
+            this.AmtPNL.AutoSize = true;
+            this.AmtPNL.Location = new System.Drawing.Point(109, 136);
+            this.AmtPNL.Name = "AmtPNL";
+            this.AmtPNL.Size = new System.Drawing.Size(13, 13);
+            this.AmtPNL.TabIndex = 7;
+            this.AmtPNL.Text = "$";
+            // 
+            // button7
+            // 
+            this.button7.Location = new System.Drawing.Point(263, 97);
+            this.button7.Name = "button7";
+            this.button7.Size = new System.Drawing.Size(75, 23);
+            this.button7.TabIndex = 6;
+            this.button7.Text = "Calculate";
+            this.button7.UseVisualStyleBackColor = true;
+            this.button7.Click += new System.EventHandler(this.button7_Click);
+            // 
+            // label31
+            // 
+            this.label31.AutoSize = true;
+            this.label31.Location = new System.Drawing.Point(20, 97);
+            this.label31.Name = "label31";
+            this.label31.Size = new System.Drawing.Size(72, 13);
+            this.label31.TabIndex = 5;
+            this.label31.Text = "Local Amount";
+            // 
+            // LocalConvert
+            // 
+            this.LocalConvert.Location = new System.Drawing.Point(112, 94);
+            this.LocalConvert.Name = "LocalConvert";
+            this.LocalConvert.Size = new System.Drawing.Size(100, 20);
+            this.LocalConvert.TabIndex = 4;
+            this.LocalConvert.Text = "100";
+            // 
+            // label30
+            // 
+            this.label30.AutoSize = true;
+            this.label30.Location = new System.Drawing.Point(20, 55);
+            this.label30.Name = "label30";
+            this.label30.Size = new System.Drawing.Size(78, 13);
+            this.label30.TabIndex = 3;
+            this.label30.Text = "P2P Exchange";
+            // 
+            // label24
+            // 
+            this.label24.AutoSize = true;
+            this.label24.Location = new System.Drawing.Point(20, 17);
+            this.label24.Name = "label24";
+            this.label24.Size = new System.Drawing.Size(67, 13);
+            this.label24.TabIndex = 2;
+            this.label24.Text = "USD-LOCAL";
+            // 
+            // P2PConvRate
+            // 
+            this.P2PConvRate.Location = new System.Drawing.Point(112, 52);
+            this.P2PConvRate.Name = "P2PConvRate";
+            this.P2PConvRate.Size = new System.Drawing.Size(100, 20);
+            this.P2PConvRate.TabIndex = 1;
+            this.P2PConvRate.Text = "1.35";
+            // 
+            // ConvRate
+            // 
+            this.ConvRate.Location = new System.Drawing.Point(112, 14);
+            this.ConvRate.Name = "ConvRate";
+            this.ConvRate.Size = new System.Drawing.Size(100, 20);
+            this.ConvRate.TabIndex = 0;
+            this.ConvRate.Text = "1.33";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.HotTrack;
-            this.ClientSize = new System.Drawing.Size(359, 213);
+            this.ClientSize = new System.Drawing.Size(386, 204);
             this.Controls.Add(this.tabControl);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Form1";
             this.Text = "Binance Futures calculator";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.tabControl.ResumeLayout(false);
+            this.tabPage6.ResumeLayout(false);
+            this.tabPage6.PerformLayout();
             this.tabPage1.ResumeLayout(false);
             this.tabPage1.PerformLayout();
             this.tabPage2.ResumeLayout(false);
@@ -818,8 +918,8 @@
             this.tabPage4.PerformLayout();
             this.tabPage5.ResumeLayout(false);
             this.tabPage5.PerformLayout();
-            this.tabPage6.ResumeLayout(false);
-            this.tabPage6.PerformLayout();
+            this.tabPage7.ResumeLayout(false);
+            this.tabPage7.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -899,6 +999,15 @@
         private System.Windows.Forms.Label label29;
         private System.Windows.Forms.TextBox percTP3;
         private System.Windows.Forms.Label label19;
+        private System.Windows.Forms.TabPage tabPage7;
+        private System.Windows.Forms.Label label31;
+        private System.Windows.Forms.TextBox LocalConvert;
+        private System.Windows.Forms.Label label30;
+        private System.Windows.Forms.Label label24;
+        private System.Windows.Forms.TextBox P2PConvRate;
+        private System.Windows.Forms.TextBox ConvRate;
+        private System.Windows.Forms.Label AmtPNL;
+        private System.Windows.Forms.Button button7;
     }
 }
 
