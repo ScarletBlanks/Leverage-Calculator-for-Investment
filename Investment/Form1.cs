@@ -248,5 +248,42 @@ namespace Investment
             AmtPNL.Text = "$" + moneyPNL.ToString();
 
         }
+
+        private void button8_Click(object sender, EventArgs e)
+        {
+
+            float totalPrice = 0;
+            float totalQuantity = 0;
+            float averagePrice = 0;
+
+            float[] quantityArray = { float.Parse(set1q.Text),
+float.Parse(set2q.Text),
+float.Parse(set3q.Text),
+float.Parse(set4q.Text),
+float.Parse(set5q.Text),
+float.Parse(set6q.Text)};
+
+            float[] priceArray = {float.Parse(set1p.Text),
+float.Parse(set2p.Text),
+float.Parse(set3p.Text),
+float.Parse(set4p.Text),
+float.Parse(set5p.Text),
+float.Parse(set6p.Text)};
+
+            for (int i = 0; i<6; i++)
+            {
+
+                totalPrice = totalPrice + (priceArray[i] * quantityArray[i]);
+                totalQuantity = totalQuantity + quantityArray[i];
+            }
+
+            averagePrice = totalPrice / totalQuantity;
+
+            avgPriceOutBox.Text = averagePrice.ToString();
+            totalQtyOutBox.Text = totalQuantity.ToString();
+
+
+        }
+
     }
 }
